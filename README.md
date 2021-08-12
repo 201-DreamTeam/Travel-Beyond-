@@ -62,3 +62,16 @@ Shows weather in different countries around the world.
 
 
 **Please note this can change according to the work progess and that both page (6)&(7) are our group’s stretch goals.
+
+--------------------------------------------------------
+
+## User Stories:
+
+- Each story in your project management board should contain:
+
+1. Title
+2. User Story sentence
+3. Feature Tasks
+4. Acceptance Tests
+
+[User Stories in Trello](https://trello.com/b/ylQuWA3H/travel-beyond)
