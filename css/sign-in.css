@@ -1,0 +1,51 @@
+body{
+    background-image:url(./../img/New-Zealand/Lake\ Tekapo\,\ New\ Zealand.jfif);
+    background-size: cover;
+}
+
+div{
+    height : 300px;
+    width :400px;
+    background-color : white;
+    margin: 200px auto;
+    border-radius: 25px;
+    box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+    
+}
+
+input{
+    width: 300px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border:transparent;
+    background-color: #f1eff1;
+}
+/* form{
+    margin-top: 50px;
+} */
+
+
+p:nth-child(1){
+    position: relative;
+    /* border: 5px solid rgb(122, 26, 26); */
+    text-align: center;
+    font-size: 40px;
+    border-top:20px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin: 20px;;
+
+}
+form p:nth-child(4){
+    
+    text-align: center;
+}
+#submit{
+    border: none;
+    margin-left: 52.5px;
+    background-color: rgb(3, 219, 219);
+}
+a{
+    color:rgb(3, 219, 219);
+}
