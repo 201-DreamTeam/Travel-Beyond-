@@ -21,14 +21,17 @@
 
         <form  method="POST" action="">
             <label for="name"> Your name  </label>
-<input type="text" placeholder="Enter your name .." name="username" maxlength="15" minlength="3" required id="name">
+            
+<input type="text" placeholder="Enter your name .. " name="username" maxlength="15" minlength="3" required id="name">
 
 <br>
 <br>
-<input type="radio" name="gender" required>
-<input type="text" placeholder="Male"  >
-<input type="radio" name="gender" required>
-<input type="text" placeholder="Female"  >
+<input type="radio" id="male" required>
+<label class="gender" for="male">male</label>
+<!-- <input type="text" placeholder="Male"  > -->
+<input type="radio" id="female" required>
+<label  class="gender" for="female">female</label>
+<!-- <input type="text" placeholder="Female"  > -->
 <span></span>
 <br>
 <br>
@@ -88,12 +91,9 @@ id="destination">
 <br>
 <br>
 
-
-
-
-
-<input type="submit" value="Register">
         </form>
+        <a href="./submit.html"><button>submit</button></a>
+
     </div>
     <div id="images">
 <h6>  </h6>
