@@ -9,7 +9,7 @@ body {
     /* background-image: url(/img/Thailand/Doi\ Inthanon\ National\ Park\,\ Ban\ Luang\,\ Thailand.jfif); */
     background-size:100% 800px;
     background-repeat: no-repeat;
-    img;
+    
 }
 
 /* *******************************drop down menu ********************* */
@@ -50,14 +50,16 @@ p{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: rgba(0, 132, 172, 0.377);
     min-width: 160px;
-    
+    width: fit-content;
+    margin-left: 3.5px;
     z-index: 1;
   }
 
 .dropdown-content a{
     padding: 20px;
+    color: white;
 }
 
 .dropdown-content a:hover {
@@ -112,7 +114,9 @@ a:hover{
 
 }
 
-
+h1{
+  color:white;
+}
 
 
 /* ********************** First Section ***************************  */
@@ -144,83 +148,260 @@ a:hover{
   font-size: 23px;
 }
 
-/* ********************** Second Section *********************************  */
-/* .container {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 90%;
-    height: 100%;
-    margin: auto;
-}
-
-.container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.outerContainer {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 50%;
-    height: 600px;
-    margin: 20px auto;
-}
-
-.outerContainer:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-*/
-.sectionTwo img {
-width: 600px;
-height: 400px;
-margin: auto;
-} 
+/* ************************* Section Two *********************************** */
 
 .sectionTwo {
-  margin-top: 250px;
   align-items: center;
-  gap: 10px;
+  margin: 200px auto;
 }
 
-.container{
-  margin: 5px 25%   ;
+.sectionTwo h3 {
+  text-align: center;
+  margin: 20px 400px;
+  border-radius: 5px;
+  background-color: rgba(0, 132, 172, 0.377);
+}
+ .sectionTwo h2 {
+   text-align: center;
+   background-color : rgba(0, 132, 172, 0.377);
+   border-radius: 5px;
+   margin: auto 300px;
+ }
+
+ .container {
+   margin-left: 100px;
+ }
+/* ********************** Slider *********************************  */
+
+.slider{
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
   justify-content: center;
 }
-/* .inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-} */
 
-.sectionTwoDiv {
-  margin: 100px 0px;
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
 
-h3 {
-  font-size: 30px;
-  width: 100%;
-  text-align: center;
-  
+.manual-btn:not(:last-child){
+  margin-right: 40px;
 }
 
-.sectionTwo h2 {
-  font-size: 40px;
-  margin: auto;
-  width: 100%;
-  text-align: center;
+.manual-btn:hover{
+  background: #40D3DC;
 }
 
-h4 {
-  font-size: 30px;
-  margin-left: 80px;
-  width: 100%;
+#radio11:checked ~ .first{
+  margin-left: 0;
+}
+#radio12:checked ~ .first{
+  margin-left: 0;
+}
+#radio13:checked ~ .first{
+  margin-left: 0;
+} 
+#radio14:checked ~ .first{
+  margin-left: 0;
+} 
+#radio15:checked ~ .first{
+  margin-left: 0;
 }
 
-ul {
-  list-style-type: none;
-  font-size: 18px;
-  margin-left: 10px;
-  width: 100%;
+
+
+#radio21:checked ~ .first{
+  margin-left: -20%;
+} 
+#radio22:checked ~ .first{
+  margin-left: -20%;
+} 
+#radio23:checked ~ .first{
+  margin-left: -20%;
+} 
+#radio24:checked ~ .first{
+  margin-left: -20%;
+} 
+#radio25:checked ~ .first{
+  margin-left: -20%;
 }
+
+
+#radio31:checked ~ .first{
+  margin-left: -40%;
+} 
+#radio32:checked ~ .first{
+  margin-left: -40%;
+} 
+#radio33:checked ~ .first{
+  margin-left: -40%;
+} 
+#radio34:checked ~ .first{
+  margin-left: -40%;
+} 
+#radio35:checked ~ .first{
+  margin-left: -40%;
+}
+
+
+#radio41:checked ~ .first{
+  margin-left: -60%;
+} 
+#radio42:checked ~ .first{
+  margin-left: -60%;
+} 
+#radio43:checked ~ .first{
+  margin-left: -60%;
+} 
+#radio44:checked ~ .first{
+  margin-left: -60%;
+} 
+#radio45:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+/* ********************************* Thailand ******************************* */
+
+#radio11:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+
+#radio21:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio31:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio41:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+/* ********************************* Portugal ******************************** */
+#radio12:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio22:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio32:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio42:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ******************************* Turks and Caicos ******************************* */
+#radio13:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio23:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio33:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+#radio43:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ******************************* Mexico ****************************** */
+#radio14:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio24:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio34:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+#radio44:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ********************************** Costa Rica ******************************** */
+#radio15:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio25:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio35:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio45:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+
+
+
+
 
 
 
@@ -233,6 +414,6 @@ footer {
     padding: 10px;
 }
 
-h1{
-  color:white
+footer p {
+  color: black;
 }
