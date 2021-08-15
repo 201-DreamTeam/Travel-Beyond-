@@ -1,55 +1,207 @@
-/* body{
-    
-} */
+* {
+    box-sizing: border-box;}
+
+
 body{
-    /* background-color: #fcf3f8; */
-    background-image: url('/img/sky/photo-1443694910004-3567042689f5.jfif');
+    background: url(../img/luca-bravo-a-x96OSFHCM-unsplash.jpg);
+
+    background-size:100% 800px;
+    background-repeat: no-repeat;
+
+
 }
-.container {
+
+
+ header   h2{
+        color: white;
+      } 
+    header  p{
+        color: white;
+      
+      }
+      .dropdown {
+          
+          overflow: hidden;
+        }
+        
+      #h2{
+        color: black;
+      }  
+      .dropdown .dropbtn {
+          font-size: 16px;  
+          border: none;
+          /* outline: none; */
+          color: white;
+          
+          
+          background-color : rgba(0, 132, 172, 0.377);
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      
+           padding: 25px 50px;
+          font-family: inherit;
+          transition: 250ms;
+        }
+      
+      .dropbtn:hover {
+        background-color: rgb(0, 132, 172);  
+      }    
+        
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: rgba(0, 132, 172, 0.377);
+          min-width: 160px;
+          width: fit-content;
+          margin-left: 3.5px;
+          z-index: 1;
+        }
+      
+      .dropdown-content a{
+          padding: 20px;
+          color: white;
+      }
+      
+      .dropdown-content a:hover {
+          background-color: rgb(0, 132, 172);
+        }
+        
+      .dropdown:hover .dropdown-content {
+          display: grid;
+          grid-template-rows: repeat(auto,4);
+          text-align: center;
+          gap: 2px;
+          padding: 20px 0px;
+        }
+      
+        /* ************************ Header *************************  */
+      
+      header {
+          width: 100%;
+          display: flex;
+          /* grid-template-columns: 200px auto;
+          align-items: center; */
+          justify-content: space-between;
+          align-items: center;
+      }
+      nav{
+          display: grid;
+          width:700px;
+          grid-template-columns: auto auto auto auto;
+          gap:5px ;
+      }
+      
+      .logoImg {
+          width: 200px;
+          height: 200px;
+      }
+      
+      .link{
+           color: cornsilk;
+           font-size: 16px;
+           background-color : rgba(0, 132, 172, 0.377);
+           padding: 25px 50px;
+           box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+      } 
+      
+      a{
+          text-decoration: none;
+          transition: 250ms;
+      }
+      
+      a:hover{
+          background-color: rgb(0, 132, 172);  
+      
+      }
+      
+      h1{
+        color:white;
+      }
+
+
+
+
+
+      .firstSec{
+       
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      
+      }
+
+      .firstSec h2{
+
+font-size: 50px;
+color: white;
+font-family: 'Cormorant Garamond', serif;
+position: relative;
+top: -100px;
+
+      }
+
+      .firstSec p{
+
+
+        font-size: 35px;
+        color: white;
+        font-family: 'Patrick Hand', cursive;
+        position: relative;
+        top: -100px;
+      }
+
+
+      
+
+
+
+.secondSec{
+    margin: auto;
+    display: flex;
+    width: 1050px;
+margin-top: -250px;
+flex-basis: 33.33%;
+flex-wrap: wrap;
+background-color: transparent;
+justify-content: center;
+gap: 50px;
+}
+
+
+.card {
+    
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 70%;
-    height: 1000px;
-    margin : auto;
-    margin-top: 100px;
-    background-color: white;
-
-}
-
-.container:hover {
+    border-radius: 5px;
+    font-family: 'Acme', sans-serif;
+  }
+  
+  
+  .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.15)
+  }
+  
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .card img{
+    border-radius: 5px;
+
+  }
+/* +++++++++++++++++++++++++++++++++++*/
+
+  footer {
+    width: 100%;
+    height: 100px;
+    border-top: 2px solid black;
+    padding: 10px;
+    margin-top: 60px;
+    text-align: center;
 }
 
-img{
-    
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    margin: 0px 325px;
-    margin-top: 100px ;
-}
-
-h4{
-    text-align: center;
-    font-size: 50px;
-    
-}
-p{
-    font-size: 20px;
-    text-align: center;
-    padding: 20px ;
-    margin: 20px 50px;
-}
-#image{
-    background-image: url(/img/Thailand/Phi\ Phi\ Islands\,\ Phuket\,\ Thailand.jfif);
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-    
-    /* Full height */
-    height: 100%; 
-    
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+footer p {
+  color: black;
 }
