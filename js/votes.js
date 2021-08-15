@@ -140,12 +140,12 @@ let contryArr=['Africa','Czech','Italy','Netherlands','Portugal','Thailand','Cro
 // let imgRender=document.getElementById('voteimg');
 
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-function MainC (name , imgPath = [] ,showCoun =0, discription = '',
+function MainC (name , imgPath = [] ,clickCon =0, discription = '',
  facts = [],resturants =[],resturants_img=[],hotels=[],hotels_imgs=[],landmarks=[]) {
   this.name=name;
   this.imgPath=imgPath;
   //this.contryName=contryName;
-  this.showCoun = showCoun;
+  // this.showCoun = showCoun;
   this.description = discription;
   this.facts = facts;
   this.resturants = resturants;
@@ -153,7 +153,7 @@ function MainC (name , imgPath = [] ,showCoun =0, discription = '',
   this.hotels=hotels;
   this.hotels_imgs = hotels_imgs;
   this.landmarks=landmarks;
-  this.clickCon=0;
+  this.clickCon=clickCon;
   this.seemore =0;
   MainC.mainCArr.push(this);
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -167,7 +167,9 @@ for (let i = 0; i < contryArr.length ; i++) {
       img.push(allImg[j]);
     }
   }
-  new MainC (contryArr[i], img, 0, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
+
+  //take input from the datat storage 
+  new MainC (contryArr[i], img, JSON.parse(localStorage.data)[i].clickCon, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
 }
 
 
@@ -226,7 +228,7 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
     </div>
     <!--image slider end-->
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQiMhWB9c2QJaT0jrS_uNfz4vVPmW2ocsFuw&usqp=CAU">
-    <span></span>
+    <span id = '${MainC.mainCArr[i].name}1'>${MainC.mainCArr[i].clickCon}</span>
     <div class="container">
   
         <h4>Quick Facts</h4>
@@ -238,12 +240,13 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
         </ul>
   
     </div>
-    <button onclick="next('${MainC.mainCArr[i].name},' );">vote</button>
+    <button onclick="next('${MainC.mainCArr[i].name}' );">vote</button>
     <a href="/html/second.html" onclick="requestinfo('${MainC.mainCArr[i].name}');"><button>see more </button></a>
     
 
   </div>`;
   }
+  // on span we should update the votes number ;
   document.getElementById('mainSection').innerHTML = str;
 }
   // randomImg ++;
@@ -307,10 +310,11 @@ function next(name){
 
     if (MainC.mainCArr[i].name === name ) {
       MainC.mainCArr[i].clickCon++;
-
+      document.getElementById(name+"1").innerHTML= MainC.mainCArr[i].clickCon;
     }
   }
   localStorage.data = JSON.stringify(MainC.mainCArr);
+  
 //  sumcont();
 }
 function requestinfo (name){
