@@ -53,40 +53,283 @@ body{
     float: left;
 } */
 /* 
+/* New CSS */
+/* body{
+    background-image: url(/img/Hero2.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+    
+} */ 
+    
+
+
+/* 
+body{
+    width: 1960px;
+    margin: auto;
+    padding: 0; */
+
+    /* background: #262626; */
+    /* background-color: white; */
+    /* background-image: url(/img/Hero2.jfif); */
+    /* object-fit: cover; */
+/* 
+    font-family: sans-serif;
+}
+h1{
+   color: rgb(124, 201, 2);
+   font-family:Arial, Helvetica, sans-serif;
+font-size: 100px;
+font-style: normal;
+font-weight: 800;
+letter-spacing:0px;
+line-height: 120px;
+text-transform: none; */
+
+/* color: #FFFFFF; */
+
+/* }
+h2{
+    color: rgb(90, 91, 92);
+    font-family:'lato','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+    line-height: 120px;
+}
+.container{
+    width: 1960px;
+    min-height: 1000px; */
+    
+    /* background: #fff;
+    margin: 70px auto 0; */
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
+    /* margin: auto; */
+
+    
+    /* margin: auto; */
+
+/* }
+.container .card{
+    position: relative;
+    width: 900px;
+    height: 850px;
+    background: rgba(255, 255, 0, 0.425); */
+
+    /* margin-bottom: 40px; */
+    /* margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px; */
+/* 
+    box-sizing: border-box;
+
+    display: inline-block;
+    margin: auto; */
+
+/* margin:20px; */
+
+/* } */
+/* .container .card .imgBx{
+position: relative;
+overflow: hidden;
+margin: 50px;
+
+}
+.container .card .imgBx img{
+     max-width: 100%; 
+    height: 800px; 
+    transition: transform 2s;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.container .card:hover .imgBx img{
+    transform: scale(1.2);
+}
+.container .card .content{
+    position: absolute;
+    top:20px;
+    left:20px;
+    bottom: 20px;
+    right: 20px;
+    overflow: scroll;
+    background: rgba(63, 60, 60, 0.8);
+    color: rgb(141, 138, 138);
+    transform: scaleY(0);
+    transition: transform .5s;
+    font-size: 25px;
+    
+
+}
+
+.container .card:hover .content{
+    transform: scaleY(1);
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+.container .card .content .details{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-30%);
+    text-align: center;
+    padding: 15px;
+    color: rgb(224, 221, 221);
+    font-family:'Lato', sans-serif;
+    font-size: 50px;
+}
+
+.container .card .content .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    color:rgb(124, 201, 2);
+font-family:'Lato', sans-serif;;
+
+}
+
+.container .card .content .details h2{
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
+    color:rgb(124, 201, 2);
+    
+
+}
+hr {
+    border-top: 10px solid rgb(77, 74, 74);
+  } */
+
+
+  /* 
+body{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+.container{
+    margin: auto;
+
+    width: 1000px;
+    display: grid;
+    grid-column: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.575);
+    
+
+}
+
+.container .card{
+    max-width: 1000px;
+    position: relative;
+   
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+   
+    display: grid;
+    grid-template-columns: auto auto ;
+
+}
+
+.container .card .imgBx{
+
+   max-width:500px;
+   
+
+}
+.container .card .imgBx img{
+    
+    max-width: 100%;
+
+    max-height: 250px;
+    display: inline;
+    float:right;
+}
+.container .card .content{
+    margin-left: 20px;
+    display: inline;
+    float: left;
+} */
+/* 
 New CSS */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
+</style>
+
+header{
+    width: 1960px;
+}
+footer{
+    width: 1960px;
+}
 
 body{
-    width: 1280px;
+    /* position: fixed; */
+    width: 1960px;
     margin: auto;
     padding: 0;
     /* background: #262626; */
     background-color: white;
     font-family: sans-serif;
+    object-fit: cover;
+    /* background-image: url(/img/Hero2.jfif);
+    background-repeat: no-repeat;
+    */
+   
 }
 h1{
    color: rgb(124, 201, 2);
+   font-family: 'Poppins', sans-serif;
+font-size: 100px;
+font-style: normal;
+font-weight: 900;
+letter-spacing:0px;
+line-height: 120px;
+text-transform: none;
+/* color: #FFFFFF; */
 }
 h2{
     color: rgb(90, 91, 92);
+    font-family:'lato','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: normal;
+    line-height: 120px;
 }
 .container{
-    width: 1280px;
-    min-height: 500px;
+    width: 1960px;
+    min-height: 1000px;
     /* background: #fff;
     margin: 70px auto 0; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: auto;
+    
+
     
     /* margin: auto; */
 
 }
 .container .card{
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     background: #ff0;
-    margin: 10px;
+    margin: 20px;
     box-sizing: border-box;
     display: inline-block;
 
@@ -97,7 +340,7 @@ overflow: hidden;
 }
 .container .card .imgBx img{
     max-width: 100%;
-    height: 300px;
+    height: 600px;
     transition: transform 2s;
 }
 .container .card:hover .imgBx img{
@@ -105,15 +348,17 @@ overflow: hidden;
 }
 .container .card .content{
     position: absolute;
-    top:10px;
-    left:10px;
-    bottom: 10px;
-    right: 10px;
+    top:20px;
+    left:20px;
+    bottom: 20px;
+    right: 20px;
     overflow: scroll;
     background: rgba(63, 60, 60, 0.8);
     color: rgb(141, 138, 138);
     transform: scaleY(0);
     transition: transform .5s;
+    font-size: 25px;
+    
 
 }
 
@@ -136,25 +381,26 @@ overflow: hidden;
     text-align: center;
     padding: 15px;
     color: rgb(224, 221, 221);
+    font-family:'Lato', sans-serif;;
 }
 
 .container .card .content .details h2{
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 45px;
     color:rgb(124, 201, 2);
-
+font-family:'Lato', sans-serif;;
 
 }
 
 .container .card .content .details h2{
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 45px;
     color:rgb(124, 201, 2);
     
 
 }
 hr {
-    border-top: 5px solid rgb(77, 74, 74);
+    border-top: 10px solid rgb(77, 74, 74);
   }
