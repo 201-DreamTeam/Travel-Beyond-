@@ -75,78 +75,105 @@ let allImg = [
   'Mexico/Querétaro, Qro., Mexico.jfif',
   'Mexico/San Miguel de Allende, Mexico.jfif',
 
-  'New Zealand/Lake Matheson, New Zealand.jfif' ,
-  'New Zealand/Mount Maunganui, Tauranga, New Zealand.jfif',
-  'New Zealand/Lake Pukaki, New Zealand.jfif',
-  'New Zealand/Otago Beach, New Zealand..jfif',
-  'New Zealand/Lake Tekapo, New Zealand.jfif',
-  'New Zealand/Otago Coast, New Zealand..jfif',
-  'New Zealand/Mount Maunganui Sheep, Tauranga, New Zealand.jfif' ,
-  'New Zealand/Sutherland Falls, Fiordland National Park, New Zealand.jfif',
-
-  'Sri Lanka/Kaluketiya Watta Rd, Maaliyadda, Sri Lanka.jfif' ,
-  'Sri Lanka/Petti Petti Mirissa, Bandaramulla, Mirissa, Sri Lanka.jfif',
-  'Sri Lanka/Sri Lanka.jfif',
-  'Sri Lanka/Mirissa, Sri Lanka.jfif',
-  'Sri Lanka/Sri Lanka Sea.jfif',
-
 ];
 
 let facts = [
-  ['adsasd', 'asdads', 'asdasd', 'asdasd'],
+  ['quisquam necessitatibus vel ea veniam fugiat sit accusamus quod quidem. Placeat?', 'asdads', 'asdasd', 'asdasd'],
   ['', '', '', ''],
+  ['', 'quisquam necessitatibus vel ea veniam fugiat sit accusamus quod quidem. Placeat?', '', ''],
   ['', '', '', ''],
-  ['', '', '', ''],
-  ['', '', '', ''],
+  ['quisquam necessitatibus vel ea veniam fugiat sit accusamus quod quidem. Placeat?', '', '', ''],
   ['asdasd', 'asdasd', '', 'asdasd'],
   ['', '', '', ''],
   ['', '', '', ''],
   ['', '', '', ''],
-  ['', '', '', ''],
-  ['', '', '', ''],
+  ['', '', '', '']
 ];
 
+let resturants = [
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
+  ['fiamily' ,'fish' ,'anything' ,'eatmore']
+];
 
-let li;
+let hotels = [ 
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury']
 
-let minNum =0;
+];
+let resturants_img = [
+
+];
+
+let hotels_imgs = [
+
+];
+
+let landmarks = [
+
+];
+// let li;
+
+// let minNum =0;
 let contryArr=['Africa','Czech','Italy','Netherlands','Portugal','Thailand','Croatia',
-  'Greece','Indonesia','Mexico','New Zealand','Sri Lanka'];
+  'Greece','Indonesia','Mexico'];
 
 
-let result=document.getElementById('result');
-// let botton=document.getElementById('submit');
-let imgSection=document.getElementById('section');
-let imgRender=document.getElementById('voteimg');
+// let result=document.getElementById('result');
+// // let botton=document.getElementById('submit');
+// let imgSection=document.getElementById('section');
+// let imgRender=document.getElementById('voteimg');
 
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-function MainC (name , imgPath = [] ,showCoun =0, discription = '', facts = []) {
+function MainC (name , imgPath = [] ,showCoun =0, discription = '',
+ facts = [],resturants =[],resturants_img=[],hotels=[],hotels_imgs=[],landmarks=[]) {
   this.name=name;
   this.imgPath=imgPath;
   //this.contryName=contryName;
   this.showCoun = showCoun;
   this.description = discription;
   this.facts = facts;
+  this.resturants = resturants;
+  this.resturants_img= resturants_img;
+  this.hotels=hotels;
+  this.hotels_imgs = hotels_imgs;
+  this.landmarks=landmarks;
   this.clickCon=0;
+  this.seemore =0;
   MainC.mainCArr.push(this);
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 MainC.mainCArr =[];
 
-for (let i = 0; i < contryArr.length - 1; i++) {
+for (let i = 0; i < contryArr.length ; i++) {
   let img = [];
   for ( let j = 0; j < allImg.length - 1; j++) {
     if(contryArr[i] === allImg[j].split('/')[0]) {
-      img.push(allImg[j])
+      img.push(allImg[j]);
     }
   }
-  new MainC (contryArr[i], img, 0, '', facts[i]);
+  new MainC (contryArr[i], img, 0, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
 }
 
 
-let h1Elem=document.createElement('h1');
-let randomImg =0;
-let h2=document.createElement('h2');
+// let h1Elem=document.createElement('h1');
+// let randomImg =0;
+// let h2=document.createElement('h2');
 
 render();
 function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
@@ -198,8 +225,8 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
         <!--manual navigation end-->
     </div>
     <!--image slider end-->
-  
-  
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQiMhWB9c2QJaT0jrS_uNfz4vVPmW2ocsFuw&usqp=CAU">
+    <span></span>
     <div class="container">
   
         <h4>Quick Facts</h4>
@@ -211,11 +238,14 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
         </ul>
   
     </div>
-    <button onclick="next('${MainC.mainCArr[i].name}');">vote</button>
+    <button onclick="next('${MainC.mainCArr[i].name},' );">vote</button>
+    <a href="/html/second.html" onclick="requestinfo('${MainC.mainCArr[i].name}');"><button>see more </button></a>
+    
+
   </div>`;
   }
   document.getElementById('mainSection').innerHTML = str;
-
+}
   // randomImg ++;
 
   // console.log(randomImg);
@@ -242,17 +272,28 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
   // }
 //   console.log(minNum);
 //   console.log(MainC.mainCArr.length-1);
-}
 
-let africa=0,czech=0,italy=0,netherlands=0,portugal=0,thailand=0,croatia=0,
-  greece=0,indonesia=0,mexico=0,newZealand=0,sriLanka=0;
 
-let click=[africa,czech,italy,netherlands,portugal,thailand,croatia,greece,indonesia,
-  mexico,newZealand,sriLanka
-];
+// let africa=0,czech=0,italy=0,netherlands=0,portugal=0,thailand=0,croatia=0,
+//   greece=0,indonesia=0,mexico=0,newZealand=0,sriLanka=0;
+
+// let click=[africa,czech,italy,netherlands,portugal,thailand,croatia,greece,indonesia,
+//   mexico,newZealand,sriLanka
+// ];
 
 //render();
+// function updateCounter(i) {
+//   let likes = 0 ;
 
+//   for (let i in MainC.mainCArr[i].name){
+//     likes ++ ;
+//   }
+
+//   let cart_count = document.getElementById("itemCount") 
+//   cart_count.textContent = item_count;  
+  
+
+// }
 
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -269,23 +310,32 @@ function next(name){
 
     }
   }
-localStorage.data = JSON.stringify(MainC.mainCArr)
+  localStorage.data = JSON.stringify(MainC.mainCArr);
 //  sumcont();
 }
-
-/// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-let nameArr = [];
-function sumcont() {
-
-  let ul = document.createElement( 'ul' );
-  result.appendChild( ul );
-  li = document.createElement( 'li' );
+function requestinfo (name){
+  for (let i = 0; i < MainC.mainCArr.length; i++) {
 
 
-  li.textContent = `${MainC.mainCArr[randomImg].contryName} had ${click}`;
-  nameArr.push(MainC.mainCArr[randomImg].contryName);
-  ul.appendChild( li );
+    if (MainC.mainCArr[i].name === name ) {
+      MainC.mainCArr[i].seemore++;
+};
 }
+localStorage.data = JSON.stringify(MainC.mainCArr);
+}
+/// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// let nameArr = [];
+// function sumcont() {
+
+//   let ul = document.createElement( 'ul' );
+//   result.appendChild( ul );
+//   li = document.createElement( 'li' );
+
+
+//   li.textContent = `${MainC.mainCArr[randomImg].contryName} had ${click}`;
+//   nameArr.push(MainC.mainCArr[randomImg].contryName);
+//   ul.appendChild( li );
+// }
 // botton.addEventListener('click',shoewchart);
 // function shoewchart{
 
@@ -294,40 +344,40 @@ function sumcont() {
 
 //chart();
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-function chart(){
-  let ctx = document.getElementById('myChart').getContext('2d');
-  let myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-      datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-}
+// function chart(){
+//   let ctx = document.getElementById('myChart').getContext('2d');
+//   let myChart = new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//       datasets: [{
+//         label: '# of Votes',
+//         data: [12, 19, 3, 5, 2, 3],
+//         backgroundColor: [
+//           'rgba(255, 99, 132, 0.2)',
+//           'rgba(54, 162, 235, 0.2)',
+//           'rgba(255, 206, 86, 0.2)',
+//           'rgba(75, 192, 192, 0.2)',
+//           'rgba(153, 102, 255, 0.2)',
+//           'rgba(255, 159, 64, 0.2)'
+//         ],
+//         borderColor: [
+//           'rgba(255, 99, 132, 1)',
+//           'rgba(54, 162, 235, 1)',
+//           'rgba(255, 206, 86, 1)',
+//           'rgba(75, 192, 192, 1)',
+//           'rgba(153, 102, 255, 1)',
+//           'rgba(255, 159, 64, 1)'
+//         ],
+//         borderWidth: 1
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true
+//         }
+//       }
+//     }
+//   });
+// }
