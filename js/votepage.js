@@ -247,15 +247,15 @@ function MainC (name , imgPaths ,showCoun =0,clickCont =0) {
 MainC.mainCArr =[];
 
 for (let i = 0; i < all_img.length - 1; i++) {
-  // new MainC (contryArr[i],all_img[i]);
-  for (let j = 0; j <all_img[i].length; j++) {
-    new MainC (contryArr[i],all_img[i][j]);
+  new MainC (contryArr[i],all_img[i]);
+  // for (let j = 0; j <all_img[i].length; j++) {
+  //   new MainC (contryArr[i],all_img[i][j]);
 
     // console.log(all_img[i][j]);
   }
 
-}
-// console.log(MainC.mainCArr[0].imgPaths);
+
+console.log(MainC.mainCArr);
 
 let h1Elem=document.createElement('h1');
 let randomImg =0;
