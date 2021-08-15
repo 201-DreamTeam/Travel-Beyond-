@@ -92,6 +92,19 @@ let allImg = [
 
 ];
 
+let facts = [
+  ['adsasd', 'asdads', 'asdasd', 'asdasd'],
+  ['', '', '', ''],
+  ['', '', '', ''],
+  ['', '', '', ''],
+  ['', '', '', ''],
+  ['asdasd', 'asdasd', '', 'asdasd'],
+  ['', '', '', ''],
+  ['', '', '', ''],
+  ['', '', '', ''],
+  ['', '', '', ''],
+  ['', '', '', ''],
+];
 
 
 let li;
@@ -107,21 +120,27 @@ let imgSection=document.getElementById('section');
 let imgRender=document.getElementById('voteimg');
 
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-function MainC (name , imgPath ,contryName ,showCoun =0, discription = '', fact = []) {
+function MainC (name , imgPath = [] ,showCoun =0, discription = '', facts = []) {
   this.name=name;
   this.imgPath=imgPath;
-  this.contryName=contryName;
+  //this.contryName=contryName;
   this.showCoun = showCoun;
   this.description = discription;
-  this.fact = fact;
+  this.facts = facts;
   this.clickCon=0;
   MainC.mainCArr.push(this);
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 }
 MainC.mainCArr =[];
 
-for (let i = 0; i < allImg.length - 1; i++) {
-  new MainC (allImg[i].split('.')[0],allImg[i], allImg[i].split('/')[0]);
+for (let i = 0; i < contryArr.length - 1; i++) {
+  let img = [];
+  for ( let j = 0; j < allImg.length - 1; j++) {
+    if(contryArr[i] === allImg[j].split('/')[0]) {
+      img.push(allImg[j])
+    }
+  }
+  new MainC (contryArr[i], img, 0, '', facts[i]);
 }
 
 
@@ -129,32 +148,98 @@ let h1Elem=document.createElement('h1');
 let randomImg =0;
 let h2=document.createElement('h2');
 
+render();
 function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 
-  randomImg ++;
-
-  console.log(randomImg);
-  imgRender.src=`/img/${MainC.mainCArr[randomImg].imgPath}`;
-
-  h2.textContent=allImg[randomImg].split('/')[0];
-  imgSection.appendChild(h2);
-
-  MainC.mainCArr[randomImg].showCoun++;
-
-  if (minNum >= MainC.mainCArr.length-3) {
-
-    h1Elem.textContent='Vote Finish Please click on Show Result Button to See the Progress';
-    imgSection.appendChild(h1Elem);
+  let str = '';
+  for(let i = 0; i < MainC.mainCArr.length; i++) {
+    str += `<div class="sectionTwoDiv">
+    <h3>${MainC.mainCArr[i].name}</h3>
+  
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio11">
+            <input type="radio" name="radio-btn" id="radio21">
+            <input type="radio" name="radio-btn" id="radio31">
+            <input type="radio" name="radio-btn" id="radio41">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="./img/${MainC.mainCArr[i].imgPath[0]}" alt="">
+            </div>
+            <div class="slide">
+            <img src="./img/${MainC.mainCArr[i].imgPath[1]}" alt="">
+            </div>
+            <div class="slide">
+            <img src="./img/${MainC.mainCArr[i].imgPath[2]}" alt="">
+            </div>
+            <div class="slide">
+            <img src="./img/${MainC.mainCArr[i].imgPath[3]}" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio11" class="manual-btn"></label>
+            <label for="radio21" class="manual-btn"></label>
+            <label for="radio31" class="manual-btn"></label>
+            <label for="radio41" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+  
+  
+    <div class="container">
+  
+        <h4>Quick Facts</h4>
+        <ul>
+            <li>Population: ${MainC.mainCArr[i].facts[0]}</li>
+            <li>Capital: ${MainC.mainCArr[i].facts[1]}</li>
+            <li>Official Language: ${MainC.mainCArr[i].facts[2]}</li>
+            <li>Best Known For: ${MainC.mainCArr[i].facts[3]}</li>
+        </ul>
+  
+    </div>
+    <button onclick="next('${MainC.mainCArr[i].name}');">vote</button>
+  </div>`;
   }
+  document.getElementById('mainSection').innerHTML = str;
+
+  // randomImg ++;
+
+  // console.log(randomImg);
+  // imgRender.src=`/img/${MainC.mainCArr[randomImg].imgPath}`;
+
+  // h2.textContent=allImg[randomImg].split('/')[0];
+  // imgSection.appendChild(h2);
+
+  // MainC.mainCArr[randomImg].showCoun++;
+
+  // if (minNum >= MainC.mainCArr.length-3) {
+
+  //   h1Elem.textContent='Vote Finish Please click on Show Result Button to See the Progress';
+  //   imgSection.appendChild(h1Elem);
+  // }
 
 
-  minNum++;
+  // minNum++;
 
 
-  if (minNum <= MainC.mainCArr.length-3 ) {
-    setTimeout('render()',2000);
-    // chart();
-  }
+  // if (minNum <= MainC.mainCArr.length-3 ) {
+  //   setTimeout('render()',2000);
+  //   // chart();
+  // }
 //   console.log(minNum);
 //   console.log(MainC.mainCArr.length-1);
 }
@@ -166,28 +251,26 @@ let click=[africa,czech,italy,netherlands,portugal,thailand,croatia,greece,indon
   mexico,newZealand,sriLanka
 ];
 
-render();
+//render();
 
 
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-imgRender.addEventListener('click',next);
-function next(){
-  if ( minNum >= MainC.mainCArr.length) {
-    imgRender.removeEventListener('click',next);
-  }
+//imgRender.addEventListener('click',next);
+function next(name){
+  //if ( minNum >= MainC.mainCArr.length) {
+ //   imgRender.removeEventListener('click',next);
+ // }
   for (let i = 0; i < MainC.mainCArr.length; i++) {
 
 
-    if (MainC.mainCArr[randomImg].contryName ===contryArr[i] ) {
-      click[i]++;
+    if (MainC.mainCArr[i].name === name ) {
+      MainC.mainCArr[i].clickCon++;
 
     }
   }
-  MainC.mainCArr[randomImg].clickCon++;
-
-
-  sumcont();
+localStorage.data = JSON.stringify(MainC.mainCArr)
+//  sumcont();
 }
 
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -209,7 +292,7 @@ function sumcont() {
 
 // }
 
-chart();
+//chart();
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function chart(){
   let ctx = document.getElementById('myChart').getContext('2d');
