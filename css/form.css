@@ -40,24 +40,26 @@ width: 80%;
 height: 80%;
 background-position: center center;
 background-size: cover;
+object-fit: cover;
 background-repeat: no-repeat;
 backface-visibility: hidden;
-animation: slideBg 13s linear infinite 0s;
-animation-timing-function: ease-in-out;
+/* animation: slideBg 15s linear infinite 0s; */
+animation: moveSlideshow 15s linear infinite;
+animation-timing-function: ease;
 background-image: url(./../img/new4.jfif);
 
 }
  
-@keyframes slideBg {
+@keyframes moveSlideshow {
 
 
    0% {
        background-image: url(../img/photo-1454430690613-c5fbdb397f65.jfif);
    }
 
-   15% {background-image: url(../img/photo-1490676174569-1fa40080e712.jfif);}
+   100%% {background-image: url(/img/Greece/Mýkonos\,\ Greece.jfif);}
 
-  30% {background-image: url(../img/photo-1497262693247-aa258f96c4f5.jfif);}
+  100%% {background-image: url(/img/Greece/Top\ View\ Santorini\,\ Greece.jfif);}
 
 45% {background-image: url(../img/sea.jfif);}
 
