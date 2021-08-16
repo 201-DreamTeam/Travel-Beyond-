@@ -21,17 +21,18 @@ for (let i=0;i<object_array.length;i++){
             <!--radio buttons end-->
             <!--slide images start-->
             <div class="slide first">
-                <img src="./img/${object_array[i].imgPath[0]}" alt="">
+                <img src="/${object_array[i].resturants_img[0]}" alt="">
             </div>
             <div class="slide">
-            <img src="./img/${object_array[i].imgPath[1]}" alt="">
+            <img src="/${object_array[i].resturants_img[1]}" alt="">
             </div>
             <div class="slide">
-            <img src="./img/${object_array[i].imgPath[2]}" alt="">
+            <img src="/${object_array[i].imgPresturants_imgath[2]}" alt="">
             </div>
             <div class="slide">
-            <img src="./img/${object_array[i].imgPath[3]}" alt="">
+            <img src="/${object_array[i].resturants_img[3]}" alt="">
             </div>
+            
             <!--slide images end-->
             <!--automatic navigation start-->
             <div class="navigation-auto">
