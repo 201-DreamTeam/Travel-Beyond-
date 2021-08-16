@@ -178,8 +178,12 @@ let hotels = [
 
 ];
 let resturants_img = [
-  ['', '', '', ''],//africa
-  ['', '', '', ''],//Czech
+  ['/img/travel/africa rest/2.       Crocafellas, Kruger National Park.jfif',
+   '/img/travel/africa rest/3.       L’Orange Bleue,Thaba Pitsi Nature Reserve, Limpopo.jfif',
+    '/img/travel/africa rest/4.       The Phatt Chef, Thabo Mofutsanyana.jpg',
+     '/img/travel/africa rest/The Tasting Room, Cape Town.jfif'],//africa
+  ['/img/travel/czech resturants/Café Savoy, Czech & French Restaurant, Malá Strana.jpg',
+   '', '', ''],//Czech
   ['', '', '', ''], //Italy
   ['', '', '', ''], //Netherlands
   ['', '', '', ''], //Portugal
@@ -289,9 +293,8 @@ for (let i = 0; i < contryArr.length ; i++) {
   }
 
   //take input from the datat storage
-  new MainC (contryArr[i], img, JSON.parse(localStorage.data)[i].clickCon, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
+  new MainC (contryArr[i], img, localStorage.data ? JSON.parse(localStorage.data)[i].clickCon : 0, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
 }
-
 
 // let h1Elem=document.createElement('h1');
 // let randomImg =0;
@@ -466,42 +469,4 @@ function requestinfo (name){
 
 // }
 
-//chart();
-/// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// function chart(){
-//   let ctx = document.getElementById('myChart').getContext('2d');
-//   let myChart = new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-//       datasets: [{
-//         label: '# of Votes',
-//         data: [12, 19, 3, 5, 2, 3],
-//         backgroundColor: [
-//           'rgba(255, 99, 132, 0.2)',
-//           'rgba(54, 162, 235, 0.2)',
-//           'rgba(255, 206, 86, 0.2)',
-//           'rgba(75, 192, 192, 0.2)',
-//           'rgba(153, 102, 255, 0.2)',
-//           'rgba(255, 159, 64, 0.2)'
-//         ],
-//         borderColor: [
-//           'rgba(255, 99, 132, 1)',
-//           'rgba(54, 162, 235, 1)',
-//           'rgba(255, 206, 86, 1)',
-//           'rgba(75, 192, 192, 1)',
-//           'rgba(153, 102, 255, 1)',
-//           'rgba(255, 159, 64, 1)'
-//         ],
-//         borderWidth: 1
-//       }]
-//     },
-//     options: {
-//       scales: {
-//         y: {
-//           beginAtZero: true
-//         }
-//       }
-//     }
-//   });
-// }
+
