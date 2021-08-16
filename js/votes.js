@@ -508,17 +508,22 @@ function next(name) {
   //if ( minNum >= MainC.mainCArr.length) {
   //   imgRender.removeEventListener('click',next);
   // }
-  for (let i = 0; i < MainC.mainCArr.length; i++) {
 
 
-    if (MainC.mainCArr[i].name === name) {
-      MainC.mainCArr[i].clickCon++;
-      document.getElementById(name + '1').innerHTML = MainC.mainCArr[i].clickCon;
+  if (localStorage.user1 === 'logedin') {
+
+    for (let i = 0; i < MainC.mainCArr.length; i++) {
+
+
+
+      if (MainC.mainCArr[i].name === name ) {
+        MainC.mainCArr[i].clickCon++;
+        document.getElementById(name+'1').innerHTML= MainC.mainCArr[i].clickCon;
+      }
     }
-  }
-  localStorage.data = JSON.stringify(MainC.mainCArr);
-
-  //  sumcont();
+    localStorage.data = JSON.stringify(MainC.mainCArr);
+  }else{alert('You need to Register ');}
+//  sumcont();
 }
 function requestinfo(name) {
   for (let i = 0; i < MainC.mainCArr.length; i++) {

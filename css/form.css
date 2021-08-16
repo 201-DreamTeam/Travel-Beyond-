@@ -44,6 +44,21 @@ height: 100%;
 /* background-position: center center;
 background-size: cover;
 <<<<<<< HEAD
+
+backface-visibility: hidden; */
+background-repeat: no-repeat;
+background-image: url('/img/Hero2.jfif');
+/* object-fit: cover; */
+
+/* animation: slideBg 13s linear infinite 0s;
+animation-timing-function: ease-in-out; */
+/* background-image: url(./../img/new4.jfif); */
+
+}
+ 
+/* @keyframes slideBg {
+=======
+<<<<<<< HEAD
 object-fit: cover;
 background-repeat: no-repeat;
 backface-visibility: hidden;
@@ -70,12 +85,18 @@ animation-timing-function: ease-in-out; */
  
 /* @keyframes slideBg {
 >>>>>>> 6c940f6c19552fdcf6f7a4f8e52d02979aab0bed
+>>>>>>> 6af17656a551f9c5e86bdeb549b9ed0ebf42e9b5
 
 
    0% {
        background-image: url(/img/sky/photo-1499063078284-f78f7d89616a.jfif);
    }
 
+<<<<<<< HEAD
+   15% {background-image: url(/img/sky/photo-1500835556837-99ac94a94552.jfif);}
+
+  30% {background-image: url(/img/sky/photo-1544194272-a90c2d13cf9e.jfif);}
+=======
 <<<<<<< HEAD
    100%% {background-image: url(/img/Greece/Mýkonos\,\ Greece.jfif);}
 
@@ -85,6 +106,7 @@ animation-timing-function: ease-in-out; */
 
   30% {background-image: url(/img/sky/photo-1544194272-a90c2d13cf9e.jfif);}
 >>>>>>> 6c940f6c19552fdcf6f7a4f8e52d02979aab0bed
+>>>>>>> 6af17656a551f9c5e86bdeb549b9ed0ebf42e9b5
 
 45% {background-image: url(../img/sea.jfif);}
 
