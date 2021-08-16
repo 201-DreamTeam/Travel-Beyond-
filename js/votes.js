@@ -440,11 +440,12 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
         <!--manual navigation end-->
     </div>
     <!--image slider end-->
-    <img class="likeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQiMhWB9c2QJaT0jrS_uNfz4vVPmW2ocsFuw&usqp=CAU">
-    <span id = '${MainC.mainCArr[i].name}1'>${MainC.mainCArr[i].clickCon}</span>
+    <img class="likeImg" src="./img/votes.png">
+    <span id = '${MainC.mainCArr[i].name}1' class = "love">${MainC.mainCArr[i].clickCon}</span>
     
-    <button onclick="next('${MainC.mainCArr[i].name}' );">vote</button>
-    <a href="/html/second.html" onclick="requestinfo('${MainC.mainCArr[i].name}');"><button>see more </button></a>
+    <button onclick="next('${MainC.mainCArr[i].name}' );" class = "imgButton">vote</button>
+    <a href="/html/second.html" onclick="requestinfo('${MainC.mainCArr[i].name}');" ><button class = "imgButton">see more </button></a>
+    
     
 
   </div>`;
