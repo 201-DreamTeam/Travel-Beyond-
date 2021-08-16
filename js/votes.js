@@ -178,8 +178,12 @@ let hotels = [
 
 ];
 let resturants_img = [
-  ['', '', '', ''],//africa
-  ['', '', '', ''],//Czech
+  ['/img/travel/africa rest/2.       Crocafellas, Kruger National Park.jfif',
+   '/img/travel/africa rest/3.       L’Orange Bleue,Thaba Pitsi Nature Reserve, Limpopo.jfif',
+    '/img/travel/africa rest/4.       The Phatt Chef, Thabo Mofutsanyana.jpg',
+     '/img/travel/africa rest/The Tasting Room, Cape Town.jfif'],//africa
+  ['/img/travel/czech resturants/Café Savoy, Czech & French Restaurant, Malá Strana.jpg',
+   '', '', ''],//Czech
   ['', '', '', ''], //Italy
   ['', '', '', ''], //Netherlands
   ['', '', '', ''], //Portugal
@@ -288,10 +292,9 @@ for (let i = 0; i < contryArr.length ; i++) {
     }
   }
 
-  //take input from the datat storage 
+  //take input from the datat storage
   new MainC (contryArr[i], img, localStorage.data ? JSON.parse(localStorage.data)[i].clickCon : 0, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
 }
-
 
 // let h1Elem=document.createElement('h1');
 // let randomImg =0;
