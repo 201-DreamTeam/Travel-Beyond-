@@ -103,4 +103,459 @@ header  p{
   
   h1{
     color:white;
+<<<<<<< HEAD
   }
+=======
+  }
+  body {
+    background-color: whitesmoke;
+  }
+  h3{
+    
+    align-content: center;
+    font-size: 30px;
+    margin-left: 100px;
+    padding-right: 60px;
+  }
+  /*silider*/
+/* .slider{
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 50px;
+} */
+ul{
+  display: inline;
+}
+.rest{
+  /* display: inline; */
+  width: 450px;
+  /* height: 1000px; */
+  border-radius: 10px;
+  /* overflow: hidden; */
+  margin: 10px 50px;
+}
+.hotel{
+  width: 450px;
+  /* height: 300px; */
+  border-radius: 10px;
+  /* overflow: hidden; */
+  margin: 10px 50px;
+}
+.land{
+  width: 450px;
+  /* height: 300px; */
+  border-radius: 10px;
+  /* overflow: hidden; */
+  margin: 10px 50px;
+}
+.slides{
+  width: 500%;
+  height: 600px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -250px;
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 100px;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ sliders section $$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+#mainSection {
+  display: grid;
+  grid-template-columns: auto auto auto  ;
+  width: 100%;
+}
+
+.sectionTwoDiv {
+  display: inline-block;
+  width: 500px;
+  align-content: center;
+}
+/* .likeImg{
+  height: 75px;
+  width: 75px;
+  margin-left: 40px;
+} */
+/* div.container{
+  margin-left: 90px;
+} */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#second{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#radio10:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio20:checked ~ .first{
+  margin-left: -20%;
+} 
+
+#radio30:checked ~ .first{
+  margin-left: -40%;
+} 
+
+#radio40:checked ~ .first{
+  margin-left: -60%;
+}
+ 
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 2 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio11:checked ~ .first{
+  margin-left: 0;
+}
+#radio21:checked ~ .first{
+  margin-left: -20%;
+}
+#radio31:checked ~ .first{
+  margin-left: -40%;
+}
+#radio41:checked ~ .first{
+  margin-left: -60%;
+} 
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 3 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio12:checked ~ .first{
+  margin-left: 0;
+} 
+#radio22:checked ~ .first{
+  margin-left: -20%;
+} 
+#radio32:checked ~ .first{
+  margin-left: -40%;
+}
+#radio42:checked ~ .first{
+  margin-left: -60%;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 4 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio13:checked ~ .first{
+  margin-left: 0;
+} 
+#radio23:checked ~ .first{
+  margin-left: -20%;
+} 
+#radio33:checked ~ .first{
+  margin-left: -40%;
+} 
+#radio43:checked ~ .first{
+  margin-left: -60%;
+} 
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 5 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio14:checked ~ .first{
+  margin-left: 0;
+}
+#radio24:checked ~ .first{
+  margin-left: -20%;
+}
+#radio34:checked ~ .first{
+  margin-left: -40%;
+}
+#radio44:checked ~ .first{
+  margin-left: -60%;
+} 
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 6 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio15:checked ~ .first{
+  margin-left: 0;
+}
+#radio25:checked ~ .first{
+  margin-left: -20%;
+}
+#radio35:checked ~ .first{
+  margin-left: -40%;
+}
+#radio45:checked ~ .first{
+  margin-left: -60%;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 7 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio16:checked ~ .first{
+  margin-left: 0;
+}
+#radio26:checked ~ .first{
+  margin-left: -20%;
+}
+#radio36:checked ~ .first{
+  margin-left: -40%;
+}
+#radio46:checked ~ .first{
+  margin-left: -60%;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 8 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio17:checked ~ .first{
+  margin-left: 0;
+}
+#radio27:checked ~ .first{
+  margin-left: -20%;
+}
+#radio37:checked ~ .first{
+  margin-left: -40%;
+}
+#radio47:checked ~ .first{
+  margin-left: -60%;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 9 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio18:checked ~ .first{
+  margin-left: 0;
+}
+#radio28:checked ~ .first{
+  margin-left: -20%;
+}
+#radio38:checked ~ .first{
+  margin-left: -40%;
+}
+#radio48:checked ~ .first{
+  margin-left: -60%;
+}
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 10 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+#radio19:checked ~ .first{
+  margin-left: 0;
+}
+#radio29:checked ~ .first{
+  margin-left: -20%;
+}
+#radio39:checked ~ .first{
+  margin-left: -40%;
+}
+#radio49:checked ~ .first{
+  margin-left: -60%;
+}
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  margin-left: 100px;
+  /* justify-content: center; */
+  margin-top: 160px;
+}
+
+
+
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+/* ********************************* 1st country ******************************* */
+
+#radio10:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+
+#radio20:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio30:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio40:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+/* ********************************* 2nd country ******************************** */
+#radio11:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+
+#radio21:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio31:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio41:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ******************************* 3rd country  ******************************* */
+#radio12:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio22:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio32:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio42:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ******************************* 4th country ****************************** */
+#radio13:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio23:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio33:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+#radio43:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ********************************** 5th country ******************************** */
+#radio14:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio24:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio34:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+#radio44:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+/* ********************************* 6th ******************************* */
+
+#radio15:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+
+#radio25:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio35:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio45:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+/* ********************************* 7th ******************************** */
+#radio16:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+
+#radio26:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio36:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio46:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ******************************* 8th  ******************************* */
+#radio17:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio27:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio37:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio47:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ******************************* 9th ****************************** */
+#radio18:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio28:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio38:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+#radio48:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/* ********************************** 10th ******************************** */
+#radio19:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio29:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio39:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+#radio49:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+
+
+
+
+
+
+>>>>>>> 6af17656a551f9c5e86bdeb549b9ed0ebf42e9b5

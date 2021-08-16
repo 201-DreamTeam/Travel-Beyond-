@@ -175,11 +175,11 @@ h1{
 /* ********************** Slider *********************************  */
 
 .slider{
-  width: 800px;
+  width: 600px;
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  margin: auto;
+  margin: auto 50px;
 }
 
 .slides{
@@ -198,8 +198,9 @@ h1{
 }
 
 .slide img{
-  width: 800px;
+  width: 100%;
   height: 500px;
+  object-fit: cover;
 }
 
 /*css for manual slide navigation*/
@@ -228,6 +229,23 @@ h1{
   background: #40D3DC;
 }
 
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ sliders section $$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+#mainSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  width: 100%;
+}
+
+.sectionTwoDiv {
+  width: 400px;
+  align-content: center;
+}
+.likeImg{
+  height: 75px;
+  width: 75px;
+  margin-left: 40px;
+}
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 #radio10:checked ~ .first{
@@ -565,11 +583,56 @@ h1{
 
 footer {
     width: 100%;
-    height: 250px;
+    height: 375Spx;
     border-top: 2px solid black;
-    padding: 10px;
+    padding: 20px;
+    background-image: url(../img/footer\ img.jpg);
+    object-fit: cover;
+    background-size: cover;
+    color: white;
 }
 
-footer p {
-  color: black;
+#information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 }
+.contactUs {
+margin-left: 100px;
+line-height: 10px;
+}
+.contactUs li {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+}
+
+footer h3 {
+  font-size: 30px;
+}
+
+.about p {
+ font-size: 20px;
+}
+
+
+
+.copyRight {
+  text-align: center;
+  align-items: center;
+  line-height: 5px;
+  border-top: 5px solid white;
+  width: 300px;
+  margin: 50px auto 0px auto;
+}
+
+#pageName {
+  font-size: 25px;
+}
+
+#copyRightSt {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+
