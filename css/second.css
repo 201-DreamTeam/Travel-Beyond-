@@ -1,0 +1,106 @@
+
+
+ header   h2{
+    color: white;
+  } 
+header  p{
+    color: white;
+  
+  }
+  .dropdown {
+      
+      overflow: hidden;
+    }
+    
+  #h2{
+    color: black;
+  }  
+  .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      /* outline: none; */
+      color: white;
+      
+      
+      background-color : rgba(0, 132, 172, 0.377);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+       padding: 25px 50px;
+      font-family: inherit;
+      transition: 250ms;
+    }
+  
+  .dropbtn:hover {
+    background-color: rgb(0, 132, 172);  
+  }    
+    
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 132, 172, 0.377);
+      min-width: 160px;
+      width: fit-content;
+      margin-left: 3.5px;
+      z-index: 1;
+    }
+  
+  .dropdown-content a{
+      padding: 20px;
+      color: white;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: rgb(0, 132, 172);
+    }
+    
+  .dropdown:hover .dropdown-content {
+      display: grid;
+      grid-template-rows: repeat(auto,4);
+      text-align: center;
+      gap: 2px;
+      padding: 20px 0px;
+    }
+  
+    /* ************************ Header *************************  */
+  
+  header {
+      width: 100%;
+      display: flex;
+      /* grid-template-columns: 200px auto;
+      align-items: center; */
+      justify-content: space-between;
+      align-items: center;
+  }
+  nav{
+      display: grid;
+      width:700px;
+      grid-template-columns: auto auto auto auto;
+      gap:5px ;
+  }
+  
+  .logoImg {
+      width: 200px;
+      height: 200px;
+  }
+  
+  .link{
+       color: cornsilk;
+       font-size: 16px;
+       background-color : rgba(0, 132, 172, 0.377);
+       padding: 25px 50px;
+       box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+  } 
+  
+  a{
+      text-decoration: none;
+      transition: 250ms;
+  }
+  
+  a:hover{
+      background-color: rgb(0, 132, 172);  
+  
+  }
+  
+  h1{
+    color:white;
+  }
