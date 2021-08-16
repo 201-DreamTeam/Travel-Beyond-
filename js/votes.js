@@ -189,10 +189,10 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
     <div class="slider">
         <div class="slides">
             <!--radio buttons start-->
-            <input type="radio" name="radio-btn" id="radio11">
-            <input type="radio" name="radio-btn" id="radio21">
-            <input type="radio" name="radio-btn" id="radio31">
-            <input type="radio" name="radio-btn" id="radio41">
+            <input type="radio" name="radio-btn" id="radio1${i}">
+            <input type="radio" name="radio-btn" id="radio2${i}">
+            <input type="radio" name="radio-btn" id="radio3${i}">
+            <input type="radio" name="radio-btn" id="radio4${i}">
             <!--radio buttons end-->
             <!--slide images start-->
             <div class="slide first">
@@ -219,10 +219,10 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
         </div>
         <!--manual navigation start-->
         <div class="navigation-manual">
-            <label for="radio11" class="manual-btn"></label>
-            <label for="radio21" class="manual-btn"></label>
-            <label for="radio31" class="manual-btn"></label>
-            <label for="radio41" class="manual-btn"></label>
+            <label for="radio1${i}" class="manual-btn"></label>
+            <label for="radio2${i}" class="manual-btn"></label>
+            <label for="radio3${i}" class="manual-btn"></label>
+            <label for="radio4${i}" class="manual-btn"></label>
         </div>
         <!--manual navigation end-->
     </div>
