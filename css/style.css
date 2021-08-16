@@ -175,11 +175,11 @@ h1{
 /* ********************** Slider *********************************  */
 
 .slider{
-  width: 800px;
+  width: 600px;
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  margin: auto;
+  margin: auto 50px;
 }
 
 .slides{
@@ -237,9 +237,15 @@ h1{
   width: 100%;
 }
 
-/* .sectionTwoDiv {
+.sectionTwoDiv {
   width: 400px;
-} */
+  align-content: center;
+}
+.likeImg{
+  height: 75px;
+  width: 75px;
+  margin-left: 40px;
+}
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 1 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
 
 #radio10:checked ~ .first{
