@@ -289,8 +289,7 @@ for (let i = 0; i < contryArr.length ; i++) {
   }
 
   //take input from the datat storage
-  new MainC (contryArr[i], img, JSON.parse(localStorage.data)[i].clickCon, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
-}
+  
 
 
 // let h1Elem=document.createElement('h1');
