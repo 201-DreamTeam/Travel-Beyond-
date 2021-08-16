@@ -5,10 +5,10 @@ console.log(object_array);
 
 
 for (let i=0;i<object_array.length;i++){
-    let str = '';
-    if (object_array[i].seemore === 1){
-        str += `<div class="sectionTwoDiv">
-    <h3>${MainC.mainCArr[i].name}</h3>
+  let str = '';
+  if (object_array[i].seemore === 1){
+    str += `<div class="sectionTwoDiv">
+    <h3>${object_array[i].name}</h3>
   
     <!--image slider start-->
     <div class="slider">
@@ -21,16 +21,16 @@ for (let i=0;i<object_array.length;i++){
             <!--radio buttons end-->
             <!--slide images start-->
             <div class="slide first">
-                <img src="./img/${MainC.mainCArr[i].imgPath[0]}" alt="">
+                <img src="./img/${object_array[i].imgPath[0]}" alt="">
             </div>
             <div class="slide">
-            <img src="./img/${MainC.mainCArr[i].imgPath[1]}" alt="">
+            <img src="./img/${object_array[i].imgPath[1]}" alt="">
             </div>
             <div class="slide">
-            <img src="./img/${MainC.mainCArr[i].imgPath[2]}" alt="">
+            <img src="./img/${object_array[i].imgPath[2]}" alt="">
             </div>
             <div class="slide">
-            <img src="./img/${MainC.mainCArr[i].imgPath[3]}" alt="">
+            <img src="./img/${object_array[i].imgPath[3]}" alt="">
             </div>
             <!--slide images end-->
             <!--automatic navigation start-->
@@ -44,10 +44,10 @@ for (let i=0;i<object_array.length;i++){
         </div>
         <!--manual navigation start-->
         <div class="navigation-manual">
-            <label for="radio11" class="manual-btn"></label>
-            <label for="radio21" class="manual-btn"></label>
-            <label for="radio31" class="manual-btn"></label>
-            <label for="radio41" class="manual-btn"></label>
+        <label for="radio1${i}" class="manual-btn"></label>
+        <label for="radio2${i}" class="manual-btn"></label>
+        <label for="radio3${i}" class="manual-btn"></label>
+        <label for="radio4${i}" class="manual-btn"></label>
         </div>
         <!--manual navigation end-->
     </div>
@@ -56,20 +56,27 @@ for (let i=0;i<object_array.length;i++){
   
     <div class="container">
   
-        <h4>Quick Facts</h4>
+        <h4>Main Resturants</h4>
         <ul>
-            <li>Population: ${MainC.mainCArr[i].facts[0]}</li>
-            <li>Capital: ${MainC.mainCArr[i].facts[1]}</li>
-            <li>Official Language: ${MainC.mainCArr[i].facts[2]}</li>
-            <li>Best Known For: ${MainC.mainCArr[i].facts[3]}</li>
+            <li>Resturant#1: ${object_array[i].resturants[0]}</li>
+            <li>Resturant#2: ${object_array[i].resturants[1]}</li>
+            <li>Resturant#3: ${object_array[i].resturants[2]}</li>
+            <li>Resturant#4: ${object_array[i].resturants[3]}</li>
         </ul>
-  
-    </div>
-    <button onclick="next('${MainC.mainCArr[i].name}');">vote</button>
-    <a href="/html/second.html" onclick="requestinfo('${MainC.mainCArr[i].name}');"><button>see more </button></a>
-    
-
-  </div>`;
-  document.getElementById('second').innerHTML = str;
-}
+        <h4>Best Hotels</h4>
+        <ul>
+            <li>Hotel#1: ${object_array[i].hotels[0]}</li>
+            <li>Hotel#2: ${object_array[i].hotels[1]}</li>
+            <li>Hotel#3: ${object_array[i].hotels[2]}</li>
+            <li>Hotel#4: ${object_array[i].hotels[3]}</li>
+        </ul>
+        <h4>Landmarks</h4>
+        <ul>
+            <li>landmark#1: ${object_array[i].landmarks[0]}</li>
+            <li>landmark#2: ${object_array[i].landmarks[1]}</li>
+            <li>landmark#3: ${object_array[i].landmarks[2]}</li>
+            <li>landmark#4: ${object_array[i].landmarks[3]}</li>
+        </ul>;`;
+    document.getElementById('second').innerHTML = str;
+  }
 }
