@@ -194,9 +194,9 @@ let resturants_img = [
   ['', '', '', ''] //Mexico
 
 ];
-
+console.log(resturants_img);
 let hotels_imgs = [
-  ['', '', '', ''],//africa
+a  ['', '', '', ''],//africa
   ['', '', '', ''],//Czech
   ['', '', '', ''], //Italy
   ['', '', '', ''], //Netherlands
@@ -252,7 +252,6 @@ let landmarks = [['The Big Hole, Kimberle Kimberley was put on the mining map wh
 
 ];
 // let li;
-
 // let minNum =0;
 let contryArr=['Africa','Czech','Italy','Netherlands','Portugal','Thailand','Croatia',
   'Greece','Indonesia','Mexico'];
