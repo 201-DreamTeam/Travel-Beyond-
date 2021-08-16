@@ -91,29 +91,38 @@ let facts = [
 ];
 
 let resturants = [
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'],
-  ['fiamily' ,'fish' ,'anything' ,'eatmore']
+  ['The Phatt Chef, Thabo Mofutsanyana',
+  'L’Orange Bleue,Thaba Pitsi Nature Reserve, Limpopo',
+  'Crocafellas, Kruger National Park',
+  'The Tasting Room, Cape Town'] //Africa
+  ['Na slamníku, Czech Restaurant, Starý Bubeneč' ,
+  'Kuchyň, Unique Experience Restaurant, Hradčanské náměst' ,
+  'Portfolio Restaurant, Fine Dining Restaurant, Nové Město' ,
+  'Café Savoy, Czech & French Restaurant, Malá Strana'], //Czech
+  ['steria Francescana (Modena)' ,
+  'La Pergola dell’Hotel Rome Cavalieri' ,
+  'Le Calandre (Rubano, Padova)' ,
+  'Reale (Località Casadonna, Castel di Sangro, L’Aquila)'],//Italy
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Netherlands
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Portugal
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Thailand
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Croatia
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Greece
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Indonesia
+  ['fiamily' ,'fish' ,'anything' ,'eatmore'] //Mexico
 ];
 
 let hotels = [ 
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'],
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury']
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //africa
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Czech
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Italy
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Netherlands
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Portugal
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Thailand
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Croatia
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Greece
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Indonesia
+  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'] //Mexico
 
 ];
 let resturants_img = [
