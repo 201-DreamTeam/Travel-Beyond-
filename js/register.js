@@ -16,7 +16,7 @@ function getdata(e){
 
   for (let i = 0; i <= regInfo.length-1; i++) {
     new User (regInfo[i].split('.')[0] ,regInfo[i].split('.')[1]);
-    
+
   }
 
   localStorage.user=JSON.stringify(User.userArr);

@@ -184,22 +184,6 @@ let hotels = [
 ];
 
 let resturants_img = [
-<<<<<<< HEAD
-  ['/img/travel/africa rest/2.Crocafellas, Kruger National Park.jfif',
-    '/img/travel/africa rest/3.L’Orange Bleue,Thaba Pitsi Nature Reserve, Limpopo.jfif',
-    '/img/travel/africa rest/4.The Phatt Chef, Thabo Mofutsanyana.jpg',
-    '/img/travel/africa rest/The Tasting Room, Cape Town.jfif'],//africa
-  ['/img/travel/czech resturants/Café Savoy, Czech & French Restaurant, Malá Strana.jpg',
-    '', '', ''],//Czech
-  ['', '', '', ''], //Italy
-  ['', '', '', ''], //Netherlands
-  ['', '', '', ''], //Portugal
-  ['', '', '', ''], //Thailand
-  ['', '', '', ''], //Croatia
-  ['', '', '', ''], //Greece
-  ['', '', '', ''], //Indonesia
-  ['', '', '', ''] //Mexico
-=======
   ['/img/travel/africa rest/2.       Crocafellas, Kruger National Park.jfif',
     '/img/travel/africa rest/3.       L’Orange Bleue,Thaba Pitsi Nature Reserve, Limpopo.jfif',
     '/img/travel/africa rest/4.       The Phatt Chef, Thabo Mofutsanyana.jpg',
@@ -241,7 +225,6 @@ let resturants_img = [
     '/img/ExtraContent/Mexico/Restaurants/El-Mural-de-los-Poblanos.jpg',
     '/img/ExtraContent/Mexico/Restaurants/Los Toneles in San Luis Potosí.jpg',
     '/img/ExtraContent/Mexico/Restaurants/pujol-mexico-city.jpg'] //Mexico
->>>>>>> 6af17656a551f9c5e86bdeb549b9ed0ebf42e9b5
 
 ];
 
@@ -399,12 +382,8 @@ for (let i = 0; i < contryArr.length; i++) {
   }
 
   //take input from the datat storage
-<<<<<<< HEAD
-  new MainC (contryArr[i], img, localStorage.data ? JSON.parse(localStorage.data)[i].clickCon : 0, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
-=======
   new MainC(contryArr[i], img, localStorage.data ? JSON.parse(localStorage.data)[i].clickCon : 0,
     '', facts[i], resturants[i], resturants_img[i], hotels[i], hotels_imgs[i], landmarks[i], landmarks_imgs[i]);
->>>>>>> 6af17656a551f9c5e86bdeb549b9ed0ebf42e9b5
 }
 
 // let h1Elem=document.createElement('h1');
@@ -531,7 +510,6 @@ function next(name) {
   // }
 
 
-<<<<<<< HEAD
   if (localStorage.user1 === 'logedin') {
 
     for (let i = 0; i < MainC.mainCArr.length; i++) {
@@ -546,16 +524,6 @@ function next(name) {
     localStorage.data = JSON.stringify(MainC.mainCArr);
   }else{alert('You need to Register ');}
 //  sumcont();
-=======
-    if (MainC.mainCArr[i].name === name) {
-      MainC.mainCArr[i].clickCon++;
-      document.getElementById(name + '1').innerHTML = MainC.mainCArr[i].clickCon;
-    }
-  }
-  localStorage.data = JSON.stringify(MainC.mainCArr);
-
-  //  sumcont();
->>>>>>> 6af17656a551f9c5e86bdeb549b9ed0ebf42e9b5
 }
 function requestinfo(name) {
   for (let i = 0; i < MainC.mainCArr.length; i++) {
