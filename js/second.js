@@ -21,18 +21,6 @@ for (let i = 0; i < object_array.length; i++) {
             <!--radio buttons end-->
             <!--slide images start-->
             <div class="slide first">
-<<<<<<< HEAD
-                <img src="/${object_array[i].resturants_img[0]}" alt="">
-            </div>
-            <div class="slide">
-            <img src="/${object_array[i].resturants_img[1]}" alt="">
-            </div>
-            <div class="slide">
-            <img src="/${object_array[i].imgPresturants_imgath[2]}" alt="">
-            </div>
-            <div class="slide">
-            <img src="/${object_array[i].resturants_img[3]}" alt="">
-=======
                 <img src="${object_array[i].resturants_img[0]}" alt="">
             </div>
             <div class="slide">
@@ -43,7 +31,6 @@ for (let i = 0; i < object_array.length; i++) {
             </div>
             <div class="slide">
             <img src="${object_array[i].resturants_img[3]}" alt="">
->>>>>>> 6af17656a551f9c5e86bdeb549b9ed0ebf42e9b5
             </div>
             
             <!--slide images end-->
