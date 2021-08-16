@@ -78,62 +78,173 @@ let allImg = [
 ];
 
 let facts = [
-  ['quisquam necessitatibus vel ea veniam fugiat sit accusamus quod quidem. Placeat?', 'asdads', 'asdasd', 'asdasd'],
-  ['', '', '', ''],
-  ['', 'quisquam necessitatibus vel ea veniam fugiat sit accusamus quod quidem. Placeat?', '', ''],
-  ['', '', '', ''],
-  ['quisquam necessitatibus vel ea veniam fugiat sit accusamus quod quidem. Placeat?', '', '', ''],
-  ['asdasd', 'asdasd', '', 'asdasd'],
-  ['', '', '', ''],
-  ['', '', '', ''],
-  ['', '', '', ''],
-  ['', '', '', '']
+
+  ['', '', '', ''],//africa
+  ['', '', '', ''],//Czech
+  ['', '', '', ''], //Italy
+  ['', '', '', ''], //Netherlands
+  ['', '', '', ''], //Portugal
+  ['', '', '', ''], //Thailand
+  ['', '', '', ''], //Croatia
+  ['', '', '', ''], //Greece
+  ['', '', '', ''], //Indonesia
+  ['', '', '', ''] //Mexico
+
 ];
 
 let resturants = [
   ['The Phatt Chef, Thabo Mofutsanyana',
-  'L’Orange Bleue,Thaba Pitsi Nature Reserve, Limpopo',
-  'Crocafellas, Kruger National Park',
-  'The Tasting Room, Cape Town'] //Africa
+    'L’Orange Bleue,Thaba Pitsi Nature Reserve, Limpopo',
+    'Crocafellas, Kruger National Park',
+    'The Tasting Room, Cape Town'], //Africa
   ['Na slamníku, Czech Restaurant, Starý Bubeneč' ,
-  'Kuchyň, Unique Experience Restaurant, Hradčanské náměst' ,
-  'Portfolio Restaurant, Fine Dining Restaurant, Nové Město' ,
-  'Café Savoy, Czech & French Restaurant, Malá Strana'], //Czech
-  ['steria Francescana (Modena)' ,
-  'La Pergola dell’Hotel Rome Cavalieri' ,
-  'Le Calandre (Rubano, Padova)' ,
-  'Reale (Località Casadonna, Castel di Sangro, L’Aquila)'],//Italy
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Netherlands
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Portugal
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Thailand
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Croatia
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Greece
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'], //Indonesia
-  ['fiamily' ,'fish' ,'anything' ,'eatmore'] //Mexico
+    'Kuchyň, Unique Experience Restaurant, Hradčanské náměst' ,
+    'Portfolio Restaurant, Fine Dining Restaurant, Nové Město' ,
+    'Café Savoy, Czech & French Restaurant, Malá Strana'], //Czech
+  ['steria Francescana (Modena)  Contacts:www.osteriafrancescana.it reserve@osteriafrancescana.it Via Stella 22, Modena+39-059-223912' ,
+    'La Pergola dell’Hotel Rome Cavalieri Contacts: www.romecavalieri.it romhi.lapergolareservations@waldorfastoria.com Via Cadlolo 101, Roma +39-06-35092152.' ,
+    'Le Calandre (Rubano, Padova) Contacts: www.alajmo.it info@alaimo.it Via Liguria 1, Località Sarmeola, Rubano +39-049-630303' ,
+    'Reale (Località Casadonna, Castel di Sangro, L’Aquila) Contacts: www.ristorantereale.it info@ristorantereale.it Contrada Santa Liberata, località Casadonna, Castel di Sangro +39-0864-69382.'],//Italy
+  ['. De Librije ★★★ address: 13-15 Broerenkerkplein, Zwolle' ,
+    'Inter Scaldes Address:  2 Zandweg, Kruiningen' ,
+    '. De Lindenhof ★★☆ Address: 77 Beulakerweg, Giethoorn' ,
+    'De Kromme Watergang ★★☆ Address: 6 Slijkplaat, Hoofdplaat'], //Netherlands
+  ['-The Yeatman, Porto ua do Choupelo (Santa Marinha), 345, 4400-088 Vila Nova de Gaia, Portugal ' ,
+    '-Casa de Chá da Boa NovaAvenida da Liberdade nº 1681, 4450-718 Leça da Palmeira Porto, Portugal' ,
+    '-O PaparicoRua de Costa Cabral 23434200-232 Porto, Portugal 22 540 0548' ,
+    '-Esporão No Porto Rua do Almada 5014050-039 Porto, Portugal22 019 0153'], //Portugal
+  ['-Blue Elephant, Bangkok 233 Thanon Sathon Tai, Yannawa, Bangkok 10120, Thailand' ,
+    '-Eat Me, Bangkok Just off Convent Road (in Soi Pipat 2) Silom, Bangkok, Thailand' ,
+    '-Cafe des Amis, Pattaya Thappraya Road Soi 11, 391/6, Moo 10, Pattaya 20150, Thailand' ,
+    '-Goji Kitchen & Bar, Bangkok 99 Sukhumvit Soi 22, Klong Ton, Klong Toey, Bangkok, Thailand '], //Thailand
+  ['-Bowa Restaurant Pakljena 3 Suđurađ 20000 ' ,
+    '-Restaurant Ankora Ante Starcevica 2 Dubrovnik 20000' ,
+    '-Trattoria Carmen Kneza Damjana Jude 10 Dubrovnik 20000' ,
+    '-Bistro Izvor Rožat Gornji 1A Rožat 20236'], //Croatia
+  ['-Tudor Hall Vasileos Georgiou A 3, Athina 105 64, Greece' ,
+    '-Spondi Pirronos 5, Athina 116 36, Greece ' ,
+    '-Matsuhisa Apollonos 40, Vouliagmeni 166 71, Greece ' ,
+    '-Orizontes Aristippou 1 Lykavittos, Athens Greece'], //Greece
+  ['-Ku De Ta Jl. Kayu Aya No.9, Seminyak, Kuta, Kabupaten Badung, Bali 80361, Indonesia' ,
+    '-Holliday Restaurant Pertokoan Pandanaran, Jl. Pandanaran No.6, Pekunden, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah 50241, Indonesia' ,
+    '-Kaum Bali Jl. Petitenget No.51B, Seminyak, Kuta, Kabupaten Badung, Bali 83061, Indonesia' ,
+    '-Waroeng Tugu Hotel Tugu Bali, JL. Pantai Batu Bolong, Badung, Canggu Beach, Canggu, Denpasar, Kabupaten Badung, Bali, Indonesia'], //Indonesia
+  ['-Pujol in Mexico City Pujol, Tennyson 133, Polanco, Polanco IV Secc, 11550 Ciudad de México, CDMX, Mexico +52 55 5545 4111' ,
+    '-El Mural de los Poblanos in Puebla City El Mural, 16 de Septiembre 506, Centro, 72000 Puebla, Pue, Mexico +52 222 242 0503' ,
+    '-Quintonil in Mexico City Quintonil, Av. Isaac Newton 55, Polanco, Polanco IV Secc, 11560 Ciudad de México, CDMX, Mexico+52 55 5280 1660' ,
+    '-Los Toneles in San Luis Potosí Los Tonels, Av. Estatuto Jurídico 1040, Burócrata, 78270 San Luis, S.L.P., Mexico +52 444 817 9230'] //Mexico
 ];
 
-let hotels = [ 
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //africa
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Czech
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Italy
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Netherlands
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Portugal
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Thailand
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Croatia
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Greece
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'], //Indonesia
-  ['sleepwill' ,'take a rest' ,'anything' ,'luxury'] //Mexico
+let hotels = [
+  ['Parker Cottage Guesthouse Carstens Street, Tamboerskloof, 8001 Cape Town, South Africa' ,
+    'Antrim Villa by Antrim Collection 12 Antrim Road, Greenpoint , Three Anchor Bay, 8005 Cape Town, South Africa' ,
+    'Park Inn by Radisson Cape Town Foreshore 29 Heerengracht Street, Foreshore, Cape Town CBD, 8001 Cape Town, South Africa – Great location - show map' ,
+    'Radisson RED Hotel V&A Waterfront Cape Town Silo 6, Silo Square, V&A Waterfront, Waterfront, 8001 Cape Town, South Africa '], //africa
+  ['La BallerinaHotel Dittrichova 20, Prague, Prague Region, Czech Republic' ,'Eurostars ThaliaHotel Narodni Trida 13, Prague, Prague Region, Czech Republic' ,
+    'Hotel Three StorksHotel Valdstejnske Naemsti 8, Prague, Prague Region, Czech Repu' ,
+    'nodata'], //Czech
+  ['The St. Regis Venice' ,
+    'Hotel Principe Di Savoia - Dorchester Collection' ,
+    'Forte Village Resort - Il Castello' ,
+    'San Clemente Palace Kempinski Venice'], //Italy
+  ['Swissotel Amsterdam Damrak 96, 1012 LP Amsterdam The Netherlands 00 31 20 225 1720' ,
+    'The Hoxton, Amsterdam Herengracht 255, 1016 BJ Amsterdam The Netherlands' ,
+    'NH Collection Amsterdam Grand Hotel Krasnapolsky Dam 9, 1012 JS Amsterdam The Netherlands 00 34 913 98 46 38' ,
+    'Ambassade Hotel Herengracht 341, 1016 AZ Amsterdam The Netherlands 00 31 20 555 0222'], //Netherlands
+  ['-Tivoli Carvoeiro Algarve Resort Carvoeiro, Algarve, Portugal' ,
+    '-Hospedaria Tavira, Algarve, Portugal' ,
+    '-Memmo Príncipe Real Lisbon, Portugal' ,
+    '-Vila Vita Parc Armação de Pera, Algarve, Portugal '], //Portugal
+  ['-Four Seasons Resort Koh Samui Mae Nam, Koh Samui, Thailand' ,
+    '-Six Senses Yao Noi Ko Yao Noi, Phuket, Thailand' ,
+    '-Kamalaya Koh Samui Koh Samui, Thailand' ,
+    '-Mandarin Oriental Bangkok angkok, Thailand'], //Thailand
+  ['-Hotel Navis Volosko, Opatija, Croatia' ,
+    '-Hotel LemongardenSutivan, Brac, Croatia' ,
+    '-Palmizana Hotel Hvar, Croatia' ,
+    '-Valamar Isabella Miramare Sveti Nikola Island, Poreč, Croatia'], //Croatia
+  ['-Perivolas Santorini, Greece' ,
+    '-Kókkini Porta Rossa Rhodes, Greece' ,
+    '-Hotel Phaedra Hydra, Saronic Islands, Greece ' ,
+    '-The Rooster Antiparos, Greece'], //Greece
+  ['-Four Seasons at Jimbaran BayBali, Indonesia' ,
+    '-AmandariUbud, Bali, Indonesia' ,
+    '-Nihi Sumba Sumba, Indonesia' ,
+    '-Hanging Gardens of Bali Ubud, Bali, Indonesia'], //Indonesia
+  ['-JW Marriott Cancun Resort & Spa, Cancun, Mexico' ,
+    '-The Cape Los Cabos, Baja California, Mexico' ,
+    '-Amalys Luxury Resort, Santa Maria de Colotepec, Mexico' ,
+    '-One&Only Palmilla, Los Cabos, Baja California, Mexico'] //Mexico
 
 ];
 let resturants_img = [
+  ['', '', '', ''],//africa
+  ['', '', '', ''],//Czech
+  ['', '', '', ''], //Italy
+  ['', '', '', ''], //Netherlands
+  ['', '', '', ''], //Portugal
+  ['', '', '', ''], //Thailand
+  ['', '', '', ''], //Croatia
+  ['', '', '', ''], //Greece
+  ['', '', '', ''], //Indonesia
+  ['', '', '', ''] //Mexico
 
 ];
 
 let hotels_imgs = [
+  ['', '', '', ''],//africa
+  ['', '', '', ''],//Czech
+  ['', '', '', ''], //Italy
+  ['', '', '', ''], //Netherlands
+  ['', '', '', ''], //Portugal
+  ['', '', '', ''], //Thailand
+  ['', '', '', ''], //Croatia
+  ['', '', '', ''], //Greece
+  ['', '', '', ''], //Indonesia
+  ['', '', '', ''] //Mexico
 
 ];
 
-let landmarks = [
+let landmarks = [['The Big Hole, Kimberle Kimberley was put on the mining map when it became clear, it the late 1860s, that the area is rich in diamonds',
+  'The Castle of Good Hope, Cape Town One of the oldest buildings in South Africa, Castle of Good Hope, completed in 1666, was the hub of political and military activity in the country.',
+  'Isandlwana Battlefield, Isandlwanahe Battle of Isandlwana took place on January 22, 1879, when approximately 20,000 Zulu warriors, under King Cetshwayo’s command, successfully ambushed and defeated a British camp.',
+  'Nelson Mandela Capture Site, KwaZulu-Natal Nelson Mandela’s arrest occurred on August 5, 1962, at this spot in KwaZulu-Natal after which The Rivonia Treason Trial followed.'],//africa
+['Cathedral of St. Peter and St. Paul This neo-Gothic cathedral is famous for the bells that always ring noon at 11 A.M., a tradition that dates back to a 1645 siege by the Swedes.',
+  'Staromestske namesti The most significant square of historical Prague, it was founded in the 12th century and has been witness to many historical events',
+  'Diana Lookout Toweriana is perhaps the most popular tourist attraction in Karlovy Vary. Take the funicular from colonnade street to get direct to this beautiful place incl.',
+  'Villa Tugendhat this modernist landmark is an outstanding example of the international architectural style that flourished in 1920s Europe.'],//Czech
+['Piazza Navona, Rome Piazza Navona, translated into English as Navona Square, was initially built as a sporting stadium by Emperor Domitian in 86 BC.'
+  , 'Roman Forum, Rome The Roman Forum is adjacent to Palatine Hill so you can easily walk from one historical site to another but they have separate entrances.',
+  'Colosseum, Rome The Colosseum is regarded as a main symbol of the city and is one of the most-visited and famous historical landmarks in Italy.',
+  'Trevi Fountain, Rome . The Baroque-style water fountain is one of the largest fountains you can find in Rome.'], //Italy
+['The Rijksmuseum The Rijksmuseum is one of the most notable landmarks of the Netherlands. This is actually the National Museum for Art and History and the largest art museum in the country. It’s located in Amsterdam in the area of Museumplein.',
+  'Erasmus Bridge One of the Netherlands ‘ most famous landmarks is the 802-meter long, cable-stayed Erasmus Bridge in Rotterdam. Even though this bridge’s construction started in 1986, it was only finished in 1996, when Queen Beatrix inaugurated it.',
+  'Anne Frank House and Museum The Anne Frank House is a biographical museum dedicated to Anne Frank, a Jewish teen who is best known for her memoir “The Diary of a Young Girl.” It is located in Prinsengracht 263, Amsterdam, where she lived in hiding for over two years during World War II.',
+  'Damrak Houses in Amsterdam Another one of the best landmarks of the Netherlands located in Amsterdam are the Damrak Houses. You can find these near the central train station of Amsterdam'], //Netherlands
+['-Famous Portugal Landmarks – Dom Luis Bridge The Dom Luis Bridge is a double-deck metal bridge located in the northern city of Porto.',
+  '-Benagil Sea Cave The Algarve region is known for gorgeous beaches, dramatic coastlines, cliffs and caves',
+  '-Pena Palace – Landmarks of Portugal  It’s perched on a hill in the lush Sintra Mountains and contrasts beautifully with the forested landscape.',
+  '- Belém Tower – Famous Landmarks of Portugal It was built using lioz limestone between 1514 and 1519.'], //Portugal
+['-The Grand Palace, Bangkok Collection of impressive temples and structures in Rattanakosin.',
+  '-Sukhothai Historical Park, Sukhothai Founded in 1238, Sukhothai is one of Thailand’s most spectacular archaeological sites that previously formed the capital of the Thai Empire for around 140 years.',
+  '-Wat Rong Khun, Chiang Rai It is one of the most spectacular and fascinating landmarks in Thailand.',
+  '-Wat Phrathat Doi Suthep, Chiang Mai It is home to a glittering golden pagoda surrounded by beautiful pavilions, buildings and statues including a relic of the Lord Buddha.'], //Thailand
+['-Plitvice Lakes Listed as a UNESCO World Heritage site since 1979, Plitvice Lakes forms an incredible national park in Croatia.',
+  '-Zlatni Rat Beach Known as the Golden Horn of Croatia, Zlatni Rat Beach is a stretch of golden sands and pebble beach next to deep blue waters.',
+  '-Cetina River source Sometimes referred to as Glavas Source or Glavas Wellspring. The source is a reservoir more than 150m (490ft) deep.',
+  '-Mount BiokovoIt the highest mountain in Croatia, with its summit at 1762m (5780ft) above sea level.'], //Croatia
+['-Parthenon Parthenon sits high over a complex of temples defined as the Acropolis of Athens, committed to the Greek goddess Athena. ',
+  '-Olympia Olympia sits on the western side of the Peloponnese, one of Greece’s biggest archaeological sites. ',
+  '-Spinalonga Island Located near the northeastern coast of Crete, Spinalonga Island is a fascinating piece of history you must add to your Greece bucket list.',
+  '-Canal d’Amour, Corfu Swoon over one of the most famous natural landmarks in Corfu, the Channel of Love, just outside the village of Sidari on the northwestern coast of the isle.'], //Greece
+['-Ubud Monkey Forest Located on the island of Bali, the Ubud Monkey Forest is a nature reserve and a temple complex that is home to three 14th-century temples',
+  '-Krakatau Island This island is famous for being the site of one of the largest volcanic eruptions in modern history and also for earning a shout-out in the B-52’s song, “Lava.”',
+  '-Mount Bromo Krakatau is not the only volcano in Indonesia that you can hike up. Mount Bromo, which is located in East Java, is probably the most famous natural landmark in Indonesia.',
+  '-Borobudur Borobudur is a spectacular and large Buddhist monument that was built on top of a hill in Java between 778 and 850 CE. '], //Indonesia
+['-San Miguel de Allende In the Bajio mountains of Central Mexico, there is a small colonial destination known as San Miguel de Allende. The city is bursting with history.',
+  '-Monarch Butterfly Biosphere Reserve The annual Monarch butterfly migration is one of nature’s great spectacles and a top attraction for visitors to Mexico’s central highlands.',
+  '-El Malecon The boardwalk in Puerto Vallarta, also known as El Malecon, is a marvellous seaside promenade that border the blue waters of the Pacific.',
+  '-Uxmal The ancient Mayan city of Uxmal is one of the most historically and culturally significant attractions in Mexico. Roughly 55 km (35 miles) south of Merida in Yucatan.'] //Mexico
 
 ];
 // let li;
@@ -150,7 +261,7 @@ let contryArr=['Africa','Czech','Italy','Netherlands','Portugal','Thailand','Cro
 
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 function MainC (name , imgPath = [] ,clickCon =0, discription = '',
- facts = [],resturants =[],resturants_img=[],hotels=[],hotels_imgs=[],landmarks=[]) {
+  facts = [],resturants =[],resturants_img=[],hotels=[],hotels_imgs=[],landmarks=[]) {
   this.name=name;
   this.imgPath=imgPath;
   //this.contryName=contryName;
@@ -177,7 +288,7 @@ for (let i = 0; i < contryArr.length ; i++) {
     }
   }
 
-  //take input from the datat storage 
+  //take input from the datat storage
   new MainC (contryArr[i], img, JSON.parse(localStorage.data)[i].clickCon, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
 }
 
@@ -258,30 +369,30 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
   // on span we should update the votes number ;
   document.getElementById('mainSection').innerHTML = str;
 }
-  // randomImg ++;
+// randomImg ++;
 
-  // console.log(randomImg);
-  // imgRender.src=`/img/${MainC.mainCArr[randomImg].imgPath}`;
+// console.log(randomImg);
+// imgRender.src=`/img/${MainC.mainCArr[randomImg].imgPath}`;
 
-  // h2.textContent=allImg[randomImg].split('/')[0];
-  // imgSection.appendChild(h2);
+// h2.textContent=allImg[randomImg].split('/')[0];
+// imgSection.appendChild(h2);
 
-  // MainC.mainCArr[randomImg].showCoun++;
+// MainC.mainCArr[randomImg].showCoun++;
 
-  // if (minNum >= MainC.mainCArr.length-3) {
+// if (minNum >= MainC.mainCArr.length-3) {
 
-  //   h1Elem.textContent='Vote Finish Please click on Show Result Button to See the Progress';
-  //   imgSection.appendChild(h1Elem);
-  // }
-
-
-  // minNum++;
+//   h1Elem.textContent='Vote Finish Please click on Show Result Button to See the Progress';
+//   imgSection.appendChild(h1Elem);
+// }
 
 
-  // if (minNum <= MainC.mainCArr.length-3 ) {
-  //   setTimeout('render()',2000);
-  //   // chart();
-  // }
+// minNum++;
+
+
+// if (minNum <= MainC.mainCArr.length-3 ) {
+//   setTimeout('render()',2000);
+//   // chart();
+// }
 //   console.log(minNum);
 //   console.log(MainC.mainCArr.length-1);
 
@@ -301,9 +412,9 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 //     likes ++ ;
 //   }
 
-//   let cart_count = document.getElementById("itemCount") 
-//   cart_count.textContent = item_count;  
-  
+//   let cart_count = document.getElementById("itemCount")
+//   cart_count.textContent = item_count;
+
 
 // }
 
@@ -312,18 +423,18 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
 //imgRender.addEventListener('click',next);
 function next(name){
   //if ( minNum >= MainC.mainCArr.length) {
- //   imgRender.removeEventListener('click',next);
- // }
+  //   imgRender.removeEventListener('click',next);
+  // }
   for (let i = 0; i < MainC.mainCArr.length; i++) {
 
 
     if (MainC.mainCArr[i].name === name ) {
       MainC.mainCArr[i].clickCon++;
-      document.getElementById(name+"1").innerHTML= MainC.mainCArr[i].clickCon;
+      document.getElementById(name+'1').innerHTML= MainC.mainCArr[i].clickCon;
     }
   }
   localStorage.data = JSON.stringify(MainC.mainCArr);
-  
+
 //  sumcont();
 }
 function requestinfo (name){
@@ -332,9 +443,9 @@ function requestinfo (name){
 
     if (MainC.mainCArr[i].name === name ) {
       MainC.mainCArr[i].seemore++;
-};
-}
-localStorage.data = JSON.stringify(MainC.mainCArr);
+    }
+  }
+  localStorage.data = JSON.stringify(MainC.mainCArr);
 }
 /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // let nameArr = [];
