@@ -435,19 +435,9 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
         <!--manual navigation end-->
     </div>
     <!--image slider end-->
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQiMhWB9c2QJaT0jrS_uNfz4vVPmW2ocsFuw&usqp=CAU">
+    <img class="likeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQiMhWB9c2QJaT0jrS_uNfz4vVPmW2ocsFuw&usqp=CAU">
     <span id = '${MainC.mainCArr[i].name}1'>${MainC.mainCArr[i].clickCon}</span>
-    <div class="container">
-  
-        <h4>Quick Facts</h4>
-        <ul>
-            <li>Population: ${MainC.mainCArr[i].facts[0]}</li>
-            <li>Capital: ${MainC.mainCArr[i].facts[1]}</li>
-            <li>Official Language: ${MainC.mainCArr[i].facts[2]}</li>
-            <li>Best Known For: ${MainC.mainCArr[i].facts[3]}</li>
-        </ul>
-  
-    </div>
+    
     <button onclick="next('${MainC.mainCArr[i].name}' );">vote</button>
     <a href="/html/second.html" onclick="requestinfo('${MainC.mainCArr[i].name}');"><button>see more </button></a>
     
