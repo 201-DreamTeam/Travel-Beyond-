@@ -92,6 +92,11 @@ let facts = [
 
 ];
 
+
+
+
+
+
 let resturants = [
   ['The Phatt Chef, Thabo Mofutsanyana',
     'L’Orange Bleue,Thaba Pitsi Nature Reserve, Limpopo',
@@ -289,8 +294,11 @@ for (let i = 0; i < contryArr.length ; i++) {
   }
 
   //take input from the datat storage
-  new MainC (contryArr[i], img, JSON.parse(localStorage.data)[i].clickCon, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
+  new MainC (contryArr[i], img, localStorage.data ? JSON.parse(localStorage.data)[i].clickCon : 0, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
 }
+
+//   new MainC (contryArr[i], img, JSON.parse(localStorage.data)[i].clickCon, '', facts[i],resturants[i],resturants_img[i],hotels[i],hotels_imgs[i],landmarks[i]);
+// }
 
 
 // let h1Elem=document.createElement('h1');
