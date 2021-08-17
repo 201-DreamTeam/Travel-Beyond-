@@ -150,16 +150,20 @@ h1{
 
 .heroSection p {
     width: 50%;
+   
+    line-height: 25px;
 }
 
 
 .heroSection h1 {
   font-size: 50px;
+    line-height: 130px;
   
 }
 
 .heroSection h2 {
   font-size: 35px;
+  line-height: 72px;
 }
 
 .heroSection p {
@@ -257,14 +261,24 @@ h1{
 
 footer {
   width: 100%;
-  height: 375px;
+  height: 450px;
   border-top: 2px solid black;
   padding: 20px;
+  padding-top: 54px;
   background-image: url(../img/footer\ img.jpg);
   object-fit: cover;
   background-size: cover;
   color: white;
   margin-top: -167px;
+}
+
+#homeIcon {
+  margin-top: 15px;
+}
+
+.socialmediaIcons {
+  margin-top: 15px;
+    padding-top: 10px;
 }
 
 #information {
@@ -288,17 +302,22 @@ font-size: 30px;
 
 .about p {
 font-size: 20px;
+margin-top: 15px;
+    line-height: 25px;
 }
 
 
 
 .copyRight {
-text-align: center;
-align-items: center;
-line-height: 5px;
-border-top: 5px solid white;
-width: 300px;
-margin: auto;
+  text-align: center;
+    align-items: center;
+    line-height: 5px;
+    border-top: 5px solid white;
+    width: 300px;
+    margin: auto;
+    height: 100px;
+    margin-top: 98px;
+    line-height: 39px;
 }
 
 #pageName {
