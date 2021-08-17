@@ -203,7 +203,7 @@ text-transform: capitalize;
     height: 500px;
     border-radius: 10px;
     overflow: hidden;
-    margin: auto 50px;
+    margin: auto 215px;
   }
   
   .slides{
@@ -262,7 +262,7 @@ text-transform: capitalize;
   }
   
   .sectionTwoDiv {
-    width: 400px;
+    /* width: 600px; */
     align-content: center;
   }
   .likeImg{
