@@ -440,7 +440,7 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
         <!--manual navigation end-->
     </div>
     <!--image slider end-->
-    <img class="likeImg" src="./img/votes.png">
+    <img class="likeImg" src="./img/votesRed.png">
     <span id = '${MainC.mainCArr[i].name}1' class = "love">${MainC.mainCArr[i].clickCon}</span>
     
     <button onclick="next('${MainC.mainCArr[i].name}' );" class = "imgButton">vote</button>
