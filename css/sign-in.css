@@ -3,7 +3,14 @@
 
 
 /* *******************************drop down menu ********************* */
+
+
+
+
+
+
 h2{
+
     color: white;
   } 
   p{
@@ -120,10 +127,11 @@ footer {
     height: 375Spx;
     border-top: 2px solid black;
     padding: 20px;
-    background-image: url(../img/footer\ img.jpg);
+    /* background-image: url(../img/footer\ img.jpg); */
     object-fit: cover;
     background-size: cover;
     color: white;
+    margin-top: 90px;
   }
   
   #information {
@@ -173,21 +181,31 @@ footer {
 
 
 
-
+img{
+  height: 1400px;
+}
 body{
-    background-image:url(/img/New-Zealand/Lake\ Tekapo\,\ New\ Zealand.jfif);
+  height: 1400px;
+    margin-bottom: 23px;
+    width: 100%;
+    background-image: url(/img/devin-avery-61qsu_-wzr4-unsplash\ \(3\).jpg);
     background-size: cover;
     margin-top: -18px;
+    object-fit: cover;
+    background-repeat: no-repeat;
   }
 
 .logInDIV{
-    height : 300px;
-    width :400px;
-    background-color : white;
-    margin: 200px auto;
-    border-radius: 25px;
-    box-shadow : 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
-    
+  height: 344px;
+  width: 514px;
+  background-color: #f0f4f542;
+  margin: 200px auto;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  
+}
+main{
+  height: 750px;
 }
 /* button{
     height: 200px;
@@ -196,7 +214,7 @@ body{
 input{
     width: 300px;
     height: 30px;
-    margin-left: 50px;
+    margin-left: 102px;
     margin-top: 10px;
     border-radius: 10px;
     border:transparent;
@@ -222,29 +240,33 @@ form p:nth-child(4){
     text-align: center;
 }
 #submitBtn{
+  color: azure;
     border: none;
-    margin-left: 52.5px;
-    background-color: rgb(3, 219, 219);
+    margin-left:102px;
+    background-color: #0084acf7;
 }
 a{
-    color:rgb(3, 219, 219);
+    color:rgba(43, 91, 110, 0.969);
+    text-decoration: none;
 }
 
 .logInDIV p {
-    color: black;
+    color: rgb(247, 245, 245);
 }
 
 
 .Go {
     border: none;
     margin-left: 52.5px;
-    background-color: rgb(3, 219, 219);
+    background-color: #0385ac;
+    color: azure;
     position: relative;
     width: 300px;
     height: 30px;
-    margin-left: 50px;
+    
     margin-top: 10px;
     border-radius: 10px;
     border: transparent;
+    margin-left:102px;
     
 }
