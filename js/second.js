@@ -8,7 +8,7 @@ for (let i = 0; i < object_array.length; i++) {
     let str = '';
     if (object_array[i].seemore === 1) {
         str += `<div class="sectionTwoDiv">
-        // <div class="container">
+         <div class="container">
     <h3>${object_array[i].name}</h3>
   
     <!--image slider start-->

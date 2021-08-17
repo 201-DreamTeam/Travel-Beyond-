@@ -1,12 +1,12 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
 
 
 /* *******************************drop down menu ********************* */
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
+
 
 
 h2{
@@ -140,7 +140,7 @@ h1{
 
 footer {
   /* width: 100%; */
-  height: 450px;
+  height: auto;
   border-top: 2px solid black;
   padding: 20px;
   padding-top: 54px;
