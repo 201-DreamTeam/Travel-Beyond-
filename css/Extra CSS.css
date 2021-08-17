@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1100px;
+  margin: auto;
+  /* background-image: url(../img/Hero\ 5.jpg); */
+  /* background-image: url(/img/Thailand/Doi\ Inthanon\ National\ Park\,\ Ban\ Luang\,\ Thailand.jfif); */
+  background-size:100% 800px;
+  background-repeat: no-repeat;
+  
+  
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
 
@@ -9,10 +23,10 @@
 
 
 h2{
-  color: white;
+color: white;
 } 
 p{
-  color: white;
+color: white;
 
 }
 .dropdown {
@@ -24,8 +38,15 @@ p{
 
   }
   
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  
+  width: 65px;
+
+}
+
 #h2{
-  color: black;
+color: black;
 }  
 .dropdown .dropbtn {
     font-size: 16px;  
@@ -46,9 +67,9 @@ p{
   }
 
 .dropbtn:hover {
-  background-color: rgb(0, 132, 172);  
+background-color: rgb(0, 132, 172);  
 }    
-  
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -61,23 +82,23 @@ p{
   }
 
 .dropdown-content a{
-    padding: 20px;
-    color: white;
+  padding: 20px;
+  color: white;
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(0, 132, 172);
-  }
-  
-.dropdown:hover .dropdown-content {
-    display: grid;
-    grid-template-rows: repeat(auto,4);
-    text-align: center;
-    gap: 2px;
-    padding: 20px 0px;
-  }
+  background-color: rgb(0, 132, 172);
+}
 
-  /* ************************ Header *************************  */
+.dropdown:hover .dropdown-content {
+  display: grid;
+  grid-template-rows: repeat(auto,4);
+  text-align: center;
+  gap: 2px;
+  padding: 20px 0px;
+}
+
+/* ************************ Header *************************  */
 
 header {
   width: 100%;
@@ -100,8 +121,8 @@ nav{
 }
 
 .logoImg {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .link{
@@ -121,17 +142,17 @@ nav{
 } 
 
 header a{
-    text-decoration: none;
-    transition: 250ms;
+  text-decoration: none;
+  transition: 250ms;
 }
 
 header a:hover{
-    background-color: rgb(0, 132, 172);  
+  background-color: rgb(0, 132, 172);  
 
 }
 
 h1{
-  color:white;
+color:white;
 }
 
 /* ******************************* Footer ************************* */
@@ -325,271 +346,4 @@ text-transform: capitalize;
   #radio43:checked ~ .first{
     margin-left: -60%;
   } 
-  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 5 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-  #radio14:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio24:checked ~ .first{
-    margin-left: -20%;
-  }
-  #radio34:checked ~ .first{
-    margin-left: -40%;
-  }
-  #radio44:checked ~ .first{
-    margin-left: -60%;
-  } 
-  
-  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 6 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-  #radio15:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio25:checked ~ .first{
-    margin-left: -20%;
-  }
-  #radio35:checked ~ .first{
-    margin-left: -40%;
-  }
-  #radio45:checked ~ .first{
-    margin-left: -60%;
-  }
-  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 7 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-  #radio16:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio26:checked ~ .first{
-    margin-left: -20%;
-  }
-  #radio36:checked ~ .first{
-    margin-left: -40%;
-  }
-  #radio46:checked ~ .first{
-    margin-left: -60%;
-  }
-  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 8 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-  #radio17:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio27:checked ~ .first{
-    margin-left: -20%;
-  }
-  #radio37:checked ~ .first{
-    margin-left: -40%;
-  }
-  #radio47:checked ~ .first{
-    margin-left: -60%;
-  }
-  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 9 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-  #radio18:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio28:checked ~ .first{
-    margin-left: -20%;
-  }
-  #radio38:checked ~ .first{
-    margin-left: -40%;
-  }
-  #radio48:checked ~ .first{
-    margin-left: -60%;
-  }
-  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 10 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
-  #radio19:checked ~ .first{
-    margin-left: 0;
-  }
-  #radio29:checked ~ .first{
-    margin-left: -20%;
-  }
-  #radio39:checked ~ .first{
-    margin-left: -40%;
-  }
-  #radio49:checked ~ .first{
-    margin-left: -60%;
-  }
-  
-  /* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
-  
-  /*css for automatic navigation*/
-  
-  .navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
-  }
-  
-  .navigation-auto div{
-    border: 2px solid #40D3DC;
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-  }
-  
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  /* ********************************* 1st country ******************************* */
-  
-  #radio10:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  
-  #radio20:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio30:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  
-  #radio40:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  
-  /* ********************************* 2nd country ******************************** */
-  #radio11:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  
-  #radio21:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio31:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  
-  #radio41:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  /* ******************************* 3rd country  ******************************* */
-  #radio12:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  #radio22:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio32:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  
-  #radio42:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  /* ******************************* 4th country ****************************** */
-  #radio13:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  #radio23:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio33:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  #radio43:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  /* ********************************** 5th country ******************************** */
-  #radio14:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  #radio24:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio34:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  #radio44:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  
-  /* ********************************* 6th ******************************* */
-  
-  #radio15:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  
-  #radio25:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio35:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  
-  #radio45:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  
-  /* ********************************* 7th ******************************** */
-  #radio16:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  
-  #radio26:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio36:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  
-  #radio46:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  /* ******************************* 8th  ******************************* */
-  #radio17:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  #radio27:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio37:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  
-  #radio47:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  /* ******************************* 9th ****************************** */
-  #radio18:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  #radio28:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio38:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  #radio48:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
-  /* ********************************** 10th ******************************** */
-  #radio19:checked ~ .navigation-auto .auto-btn1{
-    background: #40D3DC;
-  }
-  
-  #radio29:checked ~ .navigation-auto .auto-btn2{
-    background: #40D3DC;
-  }
-  
-  #radio39:checked ~ .navigation-auto .auto-btn3{
-    background: #40D3DC;
-  }
-  #radio49:checked ~ .navigation-auto .auto-btn4{
-    background: #40D3DC;
-  }
+ 

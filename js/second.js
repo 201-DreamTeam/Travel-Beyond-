@@ -67,6 +67,9 @@ for (let i = 0; i < object_array.length; i++) {
         </ul>
        </div> 
         <!--image slider start-->
+        <section class="main">
+
+        <section>
     <div class="slider">
         <div class="slides">
             <!--radio buttons start-->
@@ -108,6 +111,8 @@ for (let i = 0; i < object_array.length; i++) {
         <!--manual navigation end-->
     </div>
     <!--image slider end-->
+    </section>
+        <section>
     <div class="hotel">
         <h4>Best Rated Hotels</h4>
         <ul>
@@ -117,7 +122,13 @@ for (let i = 0; i < object_array.length; i++) {
             <li><h5>Hotel Option 4:</h5> ${object_array[i].hotels[3]}</li>
         </ul>
 </div>
+</section>
+
+</section>
         <!--image slider start-->
+        <section class="main">
+
+        <section>
         <div class="slider">
             <div class="slides">
                 <!--radio buttons start-->
@@ -159,6 +170,8 @@ for (let i = 0; i < object_array.length; i++) {
             <!--manual navigation end-->
         </div>
         <!--image slider end-->
+        </section>
+        <section>
         <div class="land">
         <h4>Must Go To Landmarks</h4>
         <ul>
@@ -167,7 +180,12 @@ for (let i = 0; i < object_array.length; i++) {
             <li><h5>landmark Option 3:</h5> ${object_array[i].landmarks[2]}</li>
             <li><h5>landmark Option 4:</h5> ${object_array[i].landmarks[3]}</li>
         </ul>
-        </div>;`;
-        document.getElementById('second').innerHTML = str;
-    }
+        </div>;
+        </section>
+
+        </section>
+        </div>
+        `;
+    document.getElementById('second').innerHTML = str;
+  }
 }
