@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+.main {
+display: flex;
+grid-template-columns: 1fr 1fr ;
+margin: auto;
+}
+
+
+ul{
+    position: relative;
+    right: 10px;
+    margin: auto;
+    color: blue;
+}
+

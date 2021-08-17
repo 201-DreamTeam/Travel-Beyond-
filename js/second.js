@@ -5,67 +5,90 @@ console.log(object_array);
 
 
 for (let i = 0; i < object_array.length; i++) {
-    let str = '';
-    if (object_array[i].seemore === 1) {
-        str += `<div class="sectionTwoDiv">
-    <h3>${object_array[i].name}</h3>
-  
-    <!--image slider start-->
-    <div class="slider">
-        <div class="slides">
-            <!--radio buttons start-->
-            <input type="radio" name="radio-btn" id="radio11">
-            <input type="radio" name="radio-btn" id="radio21">
-            <input type="radio" name="radio-btn" id="radio31}">
-            <input type="radio" name="radio-btn" id="radio41">
-            <!--radio buttons end-->
-            <!--slide images start-->
-            <div class="slide first">
-                <img src="${object_array[i].resturants_img[0]}" alt="">
-            </div>
-            <div class="slide">
-            <img src="${object_array[i].resturants_img[1]}" alt="">
-            </div>
-            <div class="slide">
-            <img src="${object_array[i].resturants_img[2]}" alt="">
-            </div>
-            <div class="slide">
-            <img src="${object_array[i].resturants_img[3]}" alt="">
-            </div>
-            
-            <!--slide images end-->
-            <!--automatic navigation start-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-            <!--automatic navigation end-->
-        </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-        <label for="radio11" class="manual-btn"></label>
-        <label for="radio21" class="manual-btn"></label>
-        <label for="radio31" class="manual-btn"></label>
-        <label for="radio41" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end-->
-    </div>
-    <!--image slider end-->
-  
-  
+  let str = '';
+  if (object_array[i].seemore === 1) {
+    str += `
+        
     <div class="container">
-       <div class="rest">
-            <h4>Top Resturant Picks</h4>
-        <ul>
-            <li><h5>Resturant Option 1:</h5> ${object_array[i].resturants[0]}</li>
-            <li><h5>Resturant Option 2:</h5> ${object_array[i].resturants[1]}</li>
-            <li><h5>Resturant Option 3:</h5> ${object_array[i].resturants[2]}</li>
-            <li><h5>Resturant Option 4:</h5> ${object_array[i].resturants[3]}</li>
-        </ul>
-       </div> 
+        <section class="main">
+
+        <section>
+            <div class="sectionTwoDiv">
+                <h3>${object_array[i].name}</h3>
+
+                <!--image slider start-->
+                <div class="slider">
+                    <div class="slides">
+                        <!--radio buttons start-->
+                        <input type="radio" name="radio-btn" id="radio11">
+                        <input type="radio" name="radio-btn" id="radio21">
+                        <input type="radio" name="radio-btn" id="radio31">
+                        <input type="radio" name="radio-btn" id="radio41">
+                        <!--radio buttons end-->
+                        <!--slide images start-->
+                        <div class="slide first">
+                            <img src="${object_array[i].resturants_img[0]}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="${object_array[i].resturants_img[1]}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="${object_array[i].resturants_img[2]}" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="${object_array[i].resturants_img[3]}" alt="">
+                        </div>
+
+                        <!--slide images end-->
+                        <!--automatic navigation start-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                        <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio11" class="manual-btn"></label>
+                        <label for="radio21" class="manual-btn"></label>
+                        <label for="radio31" class="manual-btn"></label>
+                        <label for="radio41" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+                <!--image slider end-->
+        </section>
+        <section>
+            
+                <div class="rest">
+                    <h4>Top Resturant Picks</h4>
+                    <ul>
+                        <li>
+                            <h5>Resturant Option 1:</h5> ${object_array[i].resturants[0]}
+                        </li>
+                        <li>
+                            <h5>Resturant Option 2:</h5> ${object_array[i].resturants[1]}
+                        </li>
+                        <li>
+                            <h5>Resturant Option 3:</h5> ${object_array[i].resturants[2]}
+                        </li>
+                        <li>
+                            <h5>Resturant Option 4:</h5> ${object_array[i].resturants[3]}
+                        </li>
+                    </ul>
+                </div>
+
+
+        </section>
+
+    </section>
+
         <!--image slider start-->
+        <section class="main">
+
+        <section>
     <div class="slider">
         <div class="slides">
             <!--radio buttons start-->
@@ -107,6 +130,8 @@ for (let i = 0; i < object_array.length; i++) {
         <!--manual navigation end-->
     </div>
     <!--image slider end-->
+    </section>
+        <section>
     <div class="hotel">
         <h4>Best Rated Hotels</h4>
         <ul>
@@ -116,7 +141,13 @@ for (let i = 0; i < object_array.length; i++) {
             <li><h5>Hotel Option 4:</h5> ${object_array[i].hotels[3]}</li>
         </ul>
 </div>
+</section>
+
+</section>
         <!--image slider start-->
+        <section class="main">
+
+        <section>
         <div class="slider">
             <div class="slides">
                 <!--radio buttons start-->
@@ -158,6 +189,8 @@ for (let i = 0; i < object_array.length; i++) {
             <!--manual navigation end-->
         </div>
         <!--image slider end-->
+        </section>
+        <section>
         <div class="land">
         <h4>Must Go To Landmarks</h4>
         <ul>
@@ -166,7 +199,12 @@ for (let i = 0; i < object_array.length; i++) {
             <li><h5>landmark Option 3:</h5> ${object_array[i].landmarks[2]}</li>
             <li><h5>landmark Option 4:</h5> ${object_array[i].landmarks[3]}</li>
         </ul>
-        </div>;`;
-        document.getElementById('second').innerHTML = str;
-    }
+        </div>;
+        </section>
+
+        </section>
+        </div>
+        `;
+    document.getElementById('second').innerHTML = str;
+  }
 }
