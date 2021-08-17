@@ -173,10 +173,10 @@ animation: slideBg 17s  infinite 0s;
 background-image: url(../img/travel/form/newform.jfif);
 }
 @keyframes slideBg {
-    0% {
-        background-image: url(../img/travel/form/newform2.jfif);
-    }
-    50% {background-image: url(../img/travel/form/photo-1504609773096-104ff2c73ba4.jfif);}
+     /* 0% {
+        background-image: url(../img/travel/form/newform.jfif); } */
+    
+    0% {background-image: url(../img/travel/form/photo-1504609773096-104ff2c73ba4.jfif);}
    100% {background-image: url(../img/travel/form/photo-1503221043305-f7498f8b7888.jfif);}
  
 } 
