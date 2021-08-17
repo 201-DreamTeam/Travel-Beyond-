@@ -3,6 +3,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
+
 body {
     margin: auto;
     width: 100%;
@@ -10,7 +12,7 @@ body {
     /* background-image: url(/img/Thailand/Doi\ Inthanon\ National\ Park\,\ Ban\ Luang\,\ Thailand.jfif); */
     background-size:100% 800px;
     background-repeat: no-repeat;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: 'Poppins', sans-serif;
     
 }
@@ -160,23 +162,26 @@ h1{
 .heroSection h1 {
   font-size: 50px;
     line-height: 130px;
+    font-weight: 900;
   
 }
 
 .heroSection h2 {
   font-size: 35px;
   line-height: 72px;
+  font-weight: 600;
 }
 
 .heroSection p {
   font-size: 23px;
+  opacity: 0.75;
 }
 
 /* ************************* Section Two *********************************** */
 
 .sectionTwo {
   align-items: center;
-  margin: 200px auto;
+  margin-top: 200px;
 }
 
 .sectionTwo h3 {
@@ -195,6 +200,7 @@ h1{
     padding-top: 9px;
     font-size: 29px;
     color: white;
+    font-weight: 600;
 }
  .sectionTwo h2 {
    text-align: center;
@@ -263,7 +269,7 @@ h1{
 
 footer {
   width: 100%;
-  height: 450px;
+  height: auto;
   border-top: 2px solid black;
   padding: 20px;
   padding-top: 54px;
@@ -271,14 +277,14 @@ footer {
   object-fit: cover;
   background-size: cover;
   color: white;
-  margin-top: -167px;
+  /* margin-top: -167px; */
 }
 
 #homeIcon {
   margin-top: 15px;
 }
 
-.socialmediaIcons {
+#socialmediaIcons {
   margin-top: 15px;
     padding-top: 10px;
 }
@@ -300,6 +306,7 @@ font-size: 40px;
 
 footer h3 {
 font-size: 30px;
+font-weight: 900;
 }
 
 .about p {
@@ -318,7 +325,7 @@ margin-top: 15px;
     width: 300px;
     margin: auto;
     height: 100px;
-    margin-top: 98px;
+    margin-top: 75px;
     line-height: 39px;
 }
 

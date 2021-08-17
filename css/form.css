@@ -1,3 +1,11 @@
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 /* *******************************drop down menu ********************* */
 h2{
     color: white;
@@ -97,14 +105,18 @@ h2{
   
   .link{
     color: cornsilk;
-    font-size: 23px;
-    background-color: rgba(0, 132, 172, 0.377);
-    height: 58px;
-    text-align: center;
-    align-content: center;
-    width: 200px;
-    padding-top: 15px;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+      font-size: 23px;
+      background-color: rgba(0, 132, 172, 0.377);
+      height: 58px;
+      text-align: center;
+      align-content: center;
+      width: 200px;
+      padding-top: -17px;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+      align-items: center;
+      /* padding: 10px; */
+      display: flex;
+      justify-content: center;
   } 
   
   header a{
@@ -121,11 +133,83 @@ h2{
     color:white;
   }
 
+/* ******************************* Footer ************************* */
 
+footer {
+    width: 100%;
+    height: auto;
+    border-top: 2px solid black;
+    padding: 20px;
+    padding-top: 54px;
+    /* background-image: url(../img/footer\ img.jpg); */
+    object-fit: cover;
+    background-size: cover;
+    color: white;
+    
+  }
+  
+  #homeIcon {
+    margin-top: 15px;
+  }
+  
+  #socialmediaIcons {
+    margin-top: 15px;
+      padding-top: 10px;
+  }
+  
+  #information {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  }
+  .contactUs {
+  margin-left: 100px;
+  
+  }
+  .contactUs li {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  }
+  
+  footer h3 {
+  font-size: 30px;
+  }
+  
+  .about p {
+  font-size: 20px;
+  margin-top: 15px;
+      line-height: 25px;
+  }
+  
+  
+  
+  .copyRight {
+    text-align: center;
+      align-items: center;
+      line-height: 5px;
+      border-top: 5px solid white;
+      width: 300px;
+      margin: auto;
+      height: 100px;
+      margin-top: 98px;
+      line-height: 39px;
+  }
+  
+  #pageName {
+  font-size: 25px;
+  }
+  
+  #copyRightSt {
+  font-size: 20px;
+  text-transform: capitalize;
+  }
+  
+  .copyRight p {
+    height: 14px;
+  }
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
 body{ background-color: rgb(211, 230, 241); 
 }
 main{
@@ -408,7 +492,8 @@ input[type='radio']:checked + .gender:before{
 
 footer {
     width: 100%;
-    height: 517px;
+    height: 450px;
+
     border-top: 2px solid black;
     padding: 20px;
     padding-top: 54px;
@@ -416,7 +501,7 @@ footer {
     object-fit: cover;
     background-size: cover;
     color: white;
-    margin-top: -167px;
+    /* margin-top: -167px; */
   }
   
   #homeIcon {
@@ -463,7 +548,7 @@ footer {
       width: 300px;
       margin: auto;
       height: 100px;
-      margin-top: 98px;
+      margin-top: 78px;
       line-height: 39px;
   }
   
