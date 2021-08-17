@@ -177,6 +177,7 @@ gap: 50px;
     transition: 0.3s;
     border-radius: 5px;
     font-family: 'Acme', sans-serif;
+    width: 260px;
   }
   
   
@@ -263,4 +264,10 @@ font-size: 25px;
 #copyRightSt {
 font-size: 20px;
 text-transform: capitalize;
+}
+
+.secondSec img{
+width: 280px;
+height: 280px;
+
 }
