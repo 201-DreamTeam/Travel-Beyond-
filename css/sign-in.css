@@ -258,13 +258,15 @@ a{
 .Go {
     border: none;
     margin-left: 52.5px;
-    background-color: rgb(3, 219, 219);
+    background-color: #0385ac;
+    color: azure;
     position: relative;
     width: 300px;
     height: 30px;
-    margin-left: 50px;
+    
     margin-top: 10px;
     border-radius: 10px;
     border: transparent;
+    margin-left:102px;
     
 }
