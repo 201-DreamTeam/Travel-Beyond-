@@ -72,9 +72,9 @@ input[type="text"] {
     margin: 1px 1%;
     border-radius: 5px;
 }
-input[type="text"]:focus {
+/* input[type="text"]:focus {
     /* border-color: #FF7996; */
-}
+/* } */ */
 span {
     position: absolute;
     left: -9999px;
