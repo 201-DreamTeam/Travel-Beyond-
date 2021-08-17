@@ -309,7 +309,7 @@ h2{
   .dropdown-content {
       display: none;
       position: absolute;
-      background-color: rgba(0, 132, 172, 0.377);
+      background-color: rgba(0, 132, 172, 0.315);
       min-width: 160px;
       width: fit-content;
       margin-left: 14px;
@@ -459,24 +459,26 @@ body{
    
 }
 h1{
-   color: rgb(124, 201, 2);
+   color: rgb(18, 74, 92);
    font-family: 'Poppins', sans-serif;
-font-size: 100px;
+font-size: 40px;
 font-style: normal;
 font-weight: 900;
 letter-spacing:0px;
-line-height: 120px;
+line-height:35px;
 text-transform: none;
+padding-left: 30px;
 /* color: #FFFFFF; */
 }
 h2{
     color: rgb(90, 91, 92);
     font-family:'lato','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 75px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 800;
     letter-spacing: normal;
     line-height: 120px;
+    padding-left: 30px;
 }
 .container{
     /* width: 1960px; */
@@ -523,7 +525,7 @@ overflow: hidden;
     bottom: 20px;
     right: 20px;
     overflow: scroll;
-    background: rgba(63, 60, 60, 0.8);
+    background: rgba(62, 151, 179, 0.8);
     color: rgb(141, 138, 138);
     transform: scaleY(0);
     transition: transform .5s;
@@ -567,7 +569,7 @@ font-family:'Lato', sans-serif;;
     margin: 0;
     padding: 0;
     font-size: 45px;
-    color:rgb(124, 201, 2);
+    color:rgb(18, 74, 92);
     
 
 }
