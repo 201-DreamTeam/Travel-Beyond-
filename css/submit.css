@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
+body{
+    background-image: url(../img/travel/form/photo-1504609773096-104ff2c73ba4.jfif);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#congrats{
+    font-size: 50px;
+    color:white;
+    width: 800px;
+    padding-left: 26px;
+}
+#submit{
+    margin: 200px auto;
+    margin-left: 25%;
+    background-color: #0a071963;
+    width: 850px;
+    padding: 20px;
+    
+}

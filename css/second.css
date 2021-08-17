@@ -148,7 +148,7 @@ li{
     margin-bottom: 30px;
 }
 .rest{
-  color: azure;
+  color: black;
   background-color:rgba(0, 132, 172, 0.377);
   width: 797px;
   margin-bottom: 50px;
@@ -157,7 +157,7 @@ li{
   height: 390px;
 }
 .hotel{
-  color: azure;
+  color: black;
   background-color:rgba(0, 132, 172, 0.377);
   margin-bottom: 50px;
   border-radius: 10px;
@@ -166,7 +166,7 @@ li{
   width: 797px;
 }
 .land{
-  color: azure;
+  color: black;
   background-color: rgba(0, 132, 172, 0.377);
     width: 797px;
     margin-bottom: 50px;
