@@ -174,10 +174,11 @@ footer {
 
 
 
-.images{
-    background-image:url(./../img/New-Zealand/Lake\ Tekapo\,\ New\ Zealand.jfif);
+body{
+    background-image:url(/img/New-Zealand/Lake\ Tekapo\,\ New\ Zealand.jfif);
     background-size: cover;
-}
+    margin-top: -18px;
+  }
 
 .logInDIV{
     height : 300px;
