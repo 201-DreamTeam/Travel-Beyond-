@@ -333,14 +333,10 @@ function sumcont() {
 
   li.textContent = `${MainC.mainCArr[randomImg].contryName} had ${MainC.mainCArr[randomImg].clickCont}`;
 
-  // nameArr.push(MainC.mainCArr[randomImg].contryName);
   ul.appendChild( li );
 
 
 }
 
-// console.log(nameArr);
 
-// sumcont();
-/// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

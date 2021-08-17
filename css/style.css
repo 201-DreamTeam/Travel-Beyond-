@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -11,7 +12,7 @@ body {
     /* background-image: url(/img/Thailand/Doi\ Inthanon\ National\ Park\,\ Ban\ Luang\,\ Thailand.jfif); */
     background-size:100% 800px;
     background-repeat: no-repeat;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   font-family: 'Poppins', sans-serif;
     
 }
@@ -323,7 +324,7 @@ margin-top: 15px;
     width: 300px;
     margin: auto;
     height: 100px;
-    margin-top: 98px;
+    margin-top: 75px;
     line-height: 39px;
 }
 

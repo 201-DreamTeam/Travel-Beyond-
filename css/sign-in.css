@@ -3,6 +3,12 @@
 
 
 /* *******************************drop down menu ********************* */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
+
+
 h2{
   color: white;
 } 
@@ -282,16 +288,18 @@ a{
 
 
 .Go {
-  border: none;
-  margin-left: 52.5px;
-  background-color: rgb(3, 219, 219);
-  position: relative;
-  width: 300px;
-  height: 30px;
-  margin-left: 102px;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: transparent;
+    border: none;
+    margin-left: 52.5px;
+    background-color: #0385ac;
+    color: azure;
+    position: relative;
+    width: 300px;
+    height: 30px;
+    
+    margin-top: 10px;
+    border-radius: 10px;
+    border: transparent;
+    margin-left:102px;
     
 }
 
