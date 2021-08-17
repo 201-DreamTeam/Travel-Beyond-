@@ -26,6 +26,7 @@ h2{
   .dropdown {
       
       overflow: hidden;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     }
     
   #h2{
@@ -41,6 +42,8 @@ h2{
        padding: 25px 50px;
       font-family: inherit;
       transition: 250ms;
+
+      width: 100%;
     }
   
   .dropbtn:hover {
@@ -53,7 +56,7 @@ h2{
       background-color: rgba(201, 223, 230, 0.377);
       min-width: 160px;
       width: fit-content;
-      margin-left:5px;
+      margin-left: 14px;
       z-index: 1;
     }
   
@@ -120,22 +123,78 @@ h2{
     color:white;
   }
   
-  footer {
+  /* footer {
     width: 100%;
     height: 100px;
     border-top: 2px solid black;
     padding: 10px;
     margin-top: 60px;
     text-align: center;
-}
+} */
 
-footer p {
+/* footer p {
   color: black;
-}
+} */
 
 div h2  {
 
 color: black;
 font-size: 60px;
 
+}
+
+/* ******************************* Footer ************************* */
+
+footer {
+  width: 100%;
+  height: 375px;
+  border-top: 2px solid black;
+  padding: 20px;
+  background-image: url(../img/footer\ img.jpg);
+  object-fit: cover;
+  background-size: cover;
+  color: white;
+}
+
+#information {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+text-align: center;
+}
+.contactUs {
+margin-left: 100px;
+line-height: 10px;
+}
+.contactUs li {
+width: 50px;
+height: 50px;
+font-size: 40px;
+}
+
+footer h3 {
+font-size: 30px;
+}
+
+.about p {
+font-size: 20px;
+}
+
+
+
+.copyRight {
+text-align: center;
+align-items: center;
+line-height: 5px;
+border-top: 5px solid white;
+width: 300px;
+margin: 50px auto 0px auto;
+}
+
+#pageName {
+font-size: 25px;
+}
+
+#copyRightSt {
+font-size: 20px;
+text-transform: capitalize;
 }
