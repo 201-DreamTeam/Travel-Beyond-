@@ -160,7 +160,10 @@ h3{
   color:rgb(255, 255, 255);
   font-weight: bold;
  }
-body {
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
+
+ body {
+    font-family: 'Poppins', sans-serif;
     margin-left:110px;
 width: 80%;
 height: 80%;
