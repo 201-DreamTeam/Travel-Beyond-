@@ -1,6 +1,8 @@
 'use strict';
 
 
+
+
 let allImg = [
   'Africa/Betty\'s Bay, South Africa.jfif',
   'Africa/Harold Porter National Botanical Garden, Betty\'s Bay, South Africa.jfif',
