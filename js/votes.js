@@ -523,8 +523,7 @@ function next(name) {
       }
     }
     localStorage.data = JSON.stringify(MainC.mainCArr);
-  }else{alert('You need to Register ');
-  Swal.fire('You need to Register first ');}
+  }else{ Swal.fire('You need to Register first ');}
 //  sumcont();
 }
 function requestinfo(name) {
