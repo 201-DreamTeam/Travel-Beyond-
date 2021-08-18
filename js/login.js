@@ -17,7 +17,7 @@ function getdatalog(event){
     for (let i = 0; i < login.length; i++) {
       if (login[i].name === usernamelog && login[i].pass === userpasslog ) {
 
-        alert('nice');
+        Swal.fire(' Welcome to our webpage','you are now logged in successfully ');
         localStorage.user1= 'logedin';
         let str = '';
         str +=`<h1>Congratulation</h1>
@@ -29,13 +29,15 @@ function getdatalog(event){
         document.getElementById('logedin').innerHTML = str;
         break;
       }else{
-        alert('Wrong username or password');
+        
+        Swal.fire('Wrong username or password');
         break;
       }
 
     }
   }else{
-    alert('regiester please');
+    
+    Swal.fire('regiester please');
   }
 
 }

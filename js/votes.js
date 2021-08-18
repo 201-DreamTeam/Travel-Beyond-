@@ -1,6 +1,8 @@
 'use strict';
 
 
+
+
 let allImg = [
   'Africa/Betty\'s Bay, South Africa.jfif',
   'Africa/Harold Porter National Botanical Garden, Betty\'s Bay, South Africa.jfif',
@@ -517,14 +519,14 @@ function next(name) {
 
 
 
-      if (MainC.mainCArr[i].name === name ) {
+      if (MainC.mainCArr[i].name === name) {
         MainC.mainCArr[i].clickCon++;
-        document.getElementById(name+'1').innerHTML= MainC.mainCArr[i].clickCon;
+        document.getElementById(name + '1').innerHTML = MainC.mainCArr[i].clickCon;
       }
     }
     localStorage.data = JSON.stringify(MainC.mainCArr);
-  }else{alert('You need to Register ');}
-//  sumcont();
+  } else { Swal.fire('You need to Register first '); }
+  //  sumcont();
 }
 function requestinfo(name) {
   for (let i = 0; i < MainC.mainCArr.length; i++) {
