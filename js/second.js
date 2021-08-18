@@ -22,16 +22,16 @@ for (let i = 0; i < object_array.length; i++) {
             <!--radio buttons end-->
             <!--slide images start-->
             <div class="slide first">
-                <img src="${object_array[i].resturants_img[0]}" alt="">
+                <img src="./..${object_array[i].resturants_img[0]}" alt="">
             </div>
             <div class="slide">
-            <img src="${object_array[i].resturants_img[1]}" alt="">
+            <img src="./..${object_array[i].resturants_img[1]}" alt="">
             </div>
             <div class="slide">
-            <img src="${object_array[i].resturants_img[2]}" alt="">
+            <img src="./..${object_array[i].resturants_img[2]}" alt="">
             </div>
             <div class="slide">
-            <img src="${object_array[i].resturants_img[3]}" alt="">
+            <img src="./..${object_array[i].resturants_img[3]}" alt="">
             </div>
             
             <!--slide images end-->
@@ -80,16 +80,16 @@ for (let i = 0; i < object_array.length; i++) {
             <!--radio buttons end-->
             <!--slide images start-->
             <div class="slide first">
-                <img src="${object_array[i].hotels_imgs[0]}" alt="">
+                <img src="./..${object_array[i].hotels_imgs[0]}" alt="">
             </div>
             <div class="slide">
-            <img src="${object_array[i].hotels_imgs[1]}" alt="">
+            <img src="./..${object_array[i].hotels_imgs[1]}" alt="">
             </div>
             <div class="slide">
-            <img src="${object_array[i].hotels_imgs[2]}" alt="">
+            <img src="./..${object_array[i].hotels_imgs[2]}" alt="">
             </div>
             <div class="slide">
-            <img src="${object_array[i].hotels_imgs[3]}" alt="">
+            <img src="./..${object_array[i].hotels_imgs[3]}" alt="">
             </div>
             <!--slide images end-->
             <!--automatic navigation start-->
@@ -139,16 +139,16 @@ for (let i = 0; i < object_array.length; i++) {
                 <!--radio buttons end-->
                 <!--slide images start-->
                 <div class="slide first">
-                    <img src="${object_array[i].landmarks_imgs[0]}" alt="">
+                    <img src="./..${object_array[i].landmarks_imgs[0]}" alt="">
                 </div>
                 <div class="slide">
-                <img src="${object_array[i].landmarks_imgs[1]}" alt="">
+                <img src="./..${object_array[i].landmarks_imgs[1]}" alt="">
                 </div>
                 <div class="slide">
-                <img src="${object_array[i].landmarks_imgs[2]}" alt="">
+                <img src="./..${object_array[i].landmarks_imgs[2]}" alt="">
                 </div>
                 <div class="slide">
-                <img src="${object_array[i].landmarks_imgs[3]}" alt="">
+                <img src="./..${object_array[i].landmarks_imgs[3]}" alt="">
                 </div>
                 <!--slide images end-->
                 <!--automatic navigation start-->
