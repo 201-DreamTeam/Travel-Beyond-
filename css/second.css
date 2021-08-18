@@ -1,0 +1,164 @@
+
+/* 
+ header   h2{
+    color: white;
+  } 
+header  p{
+    color: white;
+  
+  }
+  .dropdown {
+      
+      overflow: hidden;
+      box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    }
+    
+  #h2{
+    color: black;
+  }  
+  .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      /* outline: none; */
+      /* color: white;
+      
+      
+      background-color : rgba(0, 132, 172, 0.377);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+       padding: 25px 50px;
+      font-family: inherit;
+      transition: 250ms;
+
+      width: 100%;
+    }
+  
+  .dropbtn:hover {
+    background-color: rgb(0, 132, 172);  
+  }    
+    
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 132, 172, 0.377);
+      min-width: 160px;
+      width: fit-content;
+      margin-left: 14px;
+      z-index: 1;
+    }
+  
+  .dropdown-content a{
+      padding: 20px;
+      color: white;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: rgb(0, 132, 172);
+    }
+    
+  .dropdown:hover .dropdown-content {
+      display: grid;
+      grid-template-rows: repeat(auto,4);
+      text-align: center;
+      gap: 2px;
+      padding: 20px 0px;
+    } */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;900&display=swap');
+    
+    
+  
+  body {
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+  }
+  h3{
+    font-weight: 600;
+    align-content: center;
+    font-size: 35px;
+    margin-left: 550px;
+    padding-right: 60px;
+    margin-bottom: 40px;
+  }
+  h4{
+    font-size: 25px;
+    margin-top: 50px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding: 20px 20px;
+}
+  
+h5{
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-left : 20px;
+}
+
+ul{
+  display: inline;
+}
+li{
+  padding-left: 20px;
+    margin-bottom: 30px;
+}
+.rest{
+  color: black;
+  background-color:rgba(0, 132, 172, 0.377);
+  width: 797px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  margin-left: 220px;
+  height: 390px;
+}
+.hotel{
+  color: black;
+  background-color:rgba(0, 132, 172, 0.377);
+  margin-bottom: 50px;
+  border-radius: 10px;
+  margin-left: 220px;
+  height: 390px;
+  width: 797px;
+}
+.land{
+  color: black;
+  background-color: rgba(0, 132, 172, 0.377);
+    width: 797px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    margin-left: 220px;
+    height: 450px;
+}
+
+.container{
+  margin-top: 130px;
+ 
+}
+/* .slides{
+  width: 500%;
+  height: 600px;
+  display: flex;
+  margin: auto;
+}
+
+.slides input{
+  display: none;
+  margin: auto;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+  margin: auto;
+}
+
+.slide img{
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+  margin: auto;
+}
+
+ */
+
+
+

@@ -3,16 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Beyond</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--  <script src="./sweetalert2/dist/sweetalert2.all.min.js"></script>  -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+   
+    
 </head>
 
 <body>
     <header>
-        <img src="./img/logo.png" alt="" class="logoImg">
+        <img src="./img/logoNoBackground.png" alt="" class="logoImg">
         <nav>
             <a class='link' href="./index.html">Home</a>
             <a class='link' href="./html/about-us.html">About Us</a>
@@ -20,18 +25,19 @@
 
 
             <div class="dropdown">
-                <button class="dropbtn">Dropdown
+                <button class="dropbtn"><span class="material-icons">
+                    menu
+                    </span>
                     <!-- <i class="fa fa-caret-down"></i> -->
                 </button>
                 <div class="dropdown-content">
-                    <a href="./html/form.html">Link 1</a>
-                    <a href="./html/vote.html">Link 2</a>
-                    <a href="./html/chart.html">Link 3</a>
-                    <a href="./html/previous_exp.html">Link 3</a>
+                    <a href="./html/form.html">Free Trips</a>
+                    <a href="./html/chart.html">Users Vote</a>
+                    <a href="./html/previous_exp.html">Experiences</a>
                 </div>
             </div>
         </nav>
-       
+
     </header>
     <main>
         <section class="heroSection">
@@ -40,7 +46,7 @@
             <h2>Why Travel?</h2>
 
             <p>Traveling is a very crucial part of life as it is the best way to get out of the busy schedule. It is
-                also to experience life in different ways .Traveling is actually a good remedy for stress, anxiety and
+                also to experience life in different ways .<!-- Traveling is actually a good remedy for stress, anxiety and
                 depression. It also improves mental and physical health. We only have one life and we should thank it
                 for making us a more advanced creature on this planet. Not only do we get to experience the beauty of
                 nature, different geographies ,topographies, and people.
@@ -49,110 +55,67 @@
                 cannot observe by sitting at home. Traveling in itself has advantages, as it makes one forget his or her
                 worries, problems, frustrations and fears. This helps by broadening your horizon to move in new
                 directions, unplugging from the pulls and pushes of daily life. We have a passport to fill full of
-                stamps rather than to have a house full of stuff. Let’s use this to make memories all over the world.
+                stamps rather than to have a house full of stuff. Let’s use this to make memories all over the world. -->
             </p>
         </section>
 
-        <section class="sectionTwo">
-            <h2>Top 5 Travel Destinations For 2021 ?</h2>
-            <div>
-                <h3>1. Thailand</h3>
-                <div class="container">
+        <section class="sectionTwo" id='mainSection'>
 
-                    <img src="./img/Thailand/Phi Phi Islands, Phuket, Thailand.jfif" alt="">
-                    <h4>Quick Facts</h4>
-                    <ul>
-                        <li>Population: 69,950,850</li>
-                        <li>Capital: Bangkok</li>
-                        <li>Official Language: Thai (about 27% of people speak English)</li>
-                        <li>Best Known For: Beaches and temples as well as delicious food</li>
-                    </ul>
 
-                </div>
-            </div>
-
-            <div>
-                <h3>2. Portugal</h3>
-                <div class="container">
-
-                    <img src="./img/Portugal/Porto Bridge, Portugal.jfif" alt="">
-                    <h4>Quick Facts</h4>
-                    <ul>
-                        <li>Population: 10,295,909</li>
-                        <li>Capital: Lisbon</li>
-                        <li>Official Language: Portuguese (about 27% of people speak English)</li>
-                        <li>Best Known For: Seafood dishes, beach destinations, and architecture from the 16th century
-                            to
-                            the 19th century</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div>
-                <h3>3. Turks and Caicos</h3>
-                <div class="container">
-
-                    <img src="./img/Turks/Turks and Caicos 2.jpg" alt="">
-                    <h4>Quick Facts</h4>
-                    <ul>
-                        <li>Population: 42,953</li>
-                        <li>Capital: Cockburn Town</li>
-                        <li>Official Language: English</li>
-                        <li>Best Known For: Island life featuring impressive beaches and marine life</li>
-                    </ul>
-
-                </div>
-            </div>
-
-            <div>
-                <h3>4. Mexico</h3>
-                <div class="container">
-
-                    <img src="./img/Mexico/Mexico 2.jpg" alt="">
-                    <h4>Quick Facts</h4>
-                    <ul>
-                        <li>Population: 126,014,024</li>
-                        <li>Capital: Mexico City</li>
-                        <li>National Language: Spanish (about 5% of the population speaks English)</li>
-                        <li>Best Known For: Food and drink culture, Day of the Dead festival, and Mayan temples</li>
-
-                    </ul>
-
-                </div>
-            </div>
-
-            <div>
-                <h3>5. Costa Rica</h3>
-                <div class="container">
-
-                    <img src="./img/Costa Rica.jpg" alt="">
-                    <h4>Quick Facts About Costa Rica</h4>
-                    <ul>
-                        <li>Population: 5,094,118</li>
-                        <li>Capital: San José</li>
-                        <li>Official Language: Spanish (about 10% of the adult population speaks English)</li>
-                        <li>Best Known For: Incredible parks and wildlife</li>
-                    </ul>
-                </div>
-            </div>
 
         </section>
     </main>
     <footer>
-        <section>
-            <h3>Contact Us</h3>
-            <ul>
-                <li>EMail: </li>
-                <li>Mobile:</li>
-                <li>Social Media:</li>
-            </ul>
+        <section id="information">
+            <section class="contactUs">
+                <h3>Contact Us</h3>
+
+                <div id="homeIcon">
+                    <li class="material-icons"> home</li>
+                </div>
+                <div id="emailIcon">
+                    <li class="material-icons"> email</li>
+                </div>
+                <div id="callIcon">
+                    <li class="material-icons"> call</li>
+                </div>
+            </section>
+
+            <section class="about">
+                <h3>About Travel Beyond</h3>
+                <p>This website is dedicated for all travel lovers, it gives travel tips, shares travel experiences,
+                    helps you choose your next travel destination, it also offers annual free trips for its
+                    participants, all they have to do to be part of the competition is fill a form, every year In June,
+                    a random winner will be picked.</p>
+            </section>
+
+            <section class="socialMedia">
+                <h3>Follow Us</h3>
+                <div id="socialmediaIcons">
+                    <i class="fab fa-facebook-f fa-2x"></i>
+                    <br> <br>
+                    <i class="fab fa-instagram fa-2x"></i>
+                    <br><br>
+                    <i class="fab fa-twitter fa-2x"></i>
+                </div>
+            </section>
+
+
+
         </section>
-        <section>
-            <p>Travel Beyond</p>
-            <p>all right reserve 2021&copy; </p>
+
+
+        </section>
+        <section class="copyRight">
+            <p id="pageName">Travel Beyond</p>
+            <p id="copyRightSt">all right reserve 2021&copy; </p>
         </section>
 
     </footer>
+    
+    
+    
+    <script src="./js/votes.js"></script>
+    <script src="https://kit.fontawesome.com/d00a8bf47f.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
