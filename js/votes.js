@@ -444,7 +444,7 @@ function render() { // !rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
     <span id = '${MainC.mainCArr[i].name}1' class = "love">${MainC.mainCArr[i].clickCon}</span>
     
     <button onclick="next('${MainC.mainCArr[i].name}' );" class = "imgButton">vote</button>
-    <a href="/html/second.html" onclick="requestinfo('${MainC.mainCArr[i].name}');" ><button class = "imgButton">see more </button></a>
+    <a href="./html/second.html" onclick="requestinfo('${MainC.mainCArr[i].name}');" ><button class = "imgButton">see more </button></a>
     
     
 
