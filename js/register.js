@@ -1,5 +1,6 @@
 'use strict';
 
+
 let submit = document.getElementById('submit');
 
 let regInfo=[];
@@ -18,7 +19,8 @@ function getdata(e){
     new User (regInfo[i].split('.')[0] ,regInfo[i].split('.')[1]);
 
   }
-  alert('Great,You are now registerd');
+ 
+  Swal.fire('Congratulations ! you are now one of our members ');
   
   localStorage.user=JSON.stringify(User.userArr);
 
