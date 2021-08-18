@@ -27,8 +27,10 @@ function getdatalog(event){
          `;
 
         document.getElementById('logedin').innerHTML = str;
+        break;
       }else{
         alert('Wrong username or password');
+        break;
       }
 
     }

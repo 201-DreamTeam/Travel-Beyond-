@@ -9,7 +9,7 @@ submit.addEventListener('submit', getdata);
 function getdata(e){
   e.preventDefault();
 
-
+  
   let username=e.target.username.value;
   let userpass=e.target.password.value;
   regInfo.push(username+'.' + userpass);
@@ -18,7 +18,8 @@ function getdata(e){
     new User (regInfo[i].split('.')[0] ,regInfo[i].split('.')[1]);
 
   }
-
+  alert('Great,You are now registerd');
+  
   localStorage.user=JSON.stringify(User.userArr);
 
 }
