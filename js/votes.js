@@ -519,14 +519,14 @@ function next(name) {
 
 
 
-      if (MainC.mainCArr[i].name === name ) {
+      if (MainC.mainCArr[i].name === name) {
         MainC.mainCArr[i].clickCon++;
-        document.getElementById(name+'1').innerHTML= MainC.mainCArr[i].clickCon;
+        document.getElementById(name + '1').innerHTML = MainC.mainCArr[i].clickCon;
       }
     }
     localStorage.data = JSON.stringify(MainC.mainCArr);
-  }else{ Swal.fire('You need to Register first ');}
-//  sumcont();
+  } else { Swal.fire('You need to Register first '); }
+  //  sumcont();
 }
 function requestinfo(name) {
   for (let i = 0; i < MainC.mainCArr.length; i++) {
