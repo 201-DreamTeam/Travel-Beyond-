@@ -75,3 +75,9 @@ Shows weather in different countries around the world.
 4. Acceptance Tests
 
 [User Stories in Trello](https://trello.com/b/ylQuWA3H/travel-beyond)
+
+----------------------------
+
+# Live project page
+
+https://201-dreamteam.github.io/Travel-Beyond-
